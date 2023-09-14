@@ -1,0 +1,70 @@
+/* this style is fit for mobile and large tablets as well (below 375px) */
+@media only screen and (max-width: 1320px){
+
+    body{
+        flex-direction: column;
+    }
+
+    .container-visuals{
+        background-image: url("../images/bg-main-mobile.png");
+        background-size: cover;
+        width: 100%;
+        min-height: 30vh;
+
+        align-items: center;
+    }
+
+    .credit-card{
+        flex-direction: column-reverse;
+
+        gap: 0;
+        margin-top: 4rem;
+    }
+
+    .credit-card__front{
+        width: 280px;
+        height: 155px;  
+
+        gap: 1.5rem;
+
+        margin-left: 0;
+        margin-top: -60px;
+    }
+
+    .credit-card__back{
+        width: 280px;
+        height: 155px;
+        
+        margin-left: 60px;
+    }
+
+    .credit-card__cvc{
+        margin-left: 80%;
+        margin-top: 24%;
+    }
+
+    .credit-card__logo{
+        width: 65px;
+    }
+
+    .credit-card__number{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .credit-card__holdername{
+        font-size: 12px;
+    }
+    .credit-card__exp{
+        font-size: 12px;
+    }
+
+    .container-form{
+        width: 100%;
+        min-height: 70vh;
+    }
+    form{
+        max-width: 90%;
+        height: 100%;
+    }
+}

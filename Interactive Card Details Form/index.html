@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="./style/globalstyles.css">
+  <link rel="stylesheet" href="./style/cardstyles.css">
+  <link rel="stylesheet" href="./style/formstyles.css">
+  <link rel="stylesheet" href="./style/mobilestyles.css">
+
+</head>
+<body>
+
+    <div class="container-visuals">
+      <div class="credit-card">
+      <div class="credit-card__front">
+          <img class="credit-card__logo" src="./images/card-logo.svg">
+          <div class="credit-card__front-details">
+            <label class="credit-card__number">0000 0000 0000 0000</label>
+            <div class="credit-card__name-and-exp">
+             <label class="credit-card__holdername">JANE APPLESEED</label>
+             <label class="credit-card__exp">00/00</label>
+          </div>
+         </div>
+        </div>
+        <div class="credit-card__back">
+          <label class="credit-card__cvc">000</label>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="container-form">
+
+      <form class="container-form-field">
+
+        <div class="input-field input-cardholder">
+          <label class="input-cardholder__label">Cardholder Name</label>
+          <input class="input-cardholder__input" type="text" placeholder="e.g. Jane Appleseed">
+        </div>
+
+        <div class="input-field input-cardnumber">
+          <label class="input-cardnumber__label">Card Number</label>
+          <input class="input-cardnumber__input" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        </div>
+
+          
+          <div class="input-field input-expdate">
+            <label class="input-expdate__label">Exp. Date (MM/YY)</label>
+            <div class="input-expdate__container">
+              <input class="input-expdate__input input-expdate__input-month" type="text" placeholder="MM" maxlength="2">
+              <input class="input-expdate__input input-expdate__input-year" type="text" placeholder="YY" maxlength="2">
+            </div>
+          </div>
+  
+          <div class="input-field input-cvc">
+            <label class="input-cvc__label">CVC</label>
+            <input class="input-cvc__input" type="text" placeholder="e.g. 123" maxlength="3"> 
+          </div>
+        
+
+        <button class="button-confirm">Confirm</button>
+
+      </form>
+
+
+      <div class="container-form-complete hide">
+
+          <div class="complete__icon">
+            <img src="./images/icon-complete.svg">
+          </div>
+
+          <div class="complete__details">
+            <h1 class="complete__details-title">Thank You!</h1>
+
+            <p class="complete__details-message">We've added your card details</p>
+          </div>
+
+          <button class="button-continue">Continue</button>
+
+      </div>
+
+    </div>
+
+    <script type="module" src="./script/eventscripts.js"></script>
+</body>
+</html>
+

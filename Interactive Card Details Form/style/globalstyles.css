@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    /* Border : */
+    --active-Input-Border-Color: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --error-Input-Border-Color: hsl(0, 100%, 66%); 
+
+    /* Primary Colors : */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet: hsl(270, 3%, 87%);
+    --Dark-Grayish-Violet: hsl(279, 6%, 55%);
+    --Very-Dark-Violet: hsl(278, 68%, 11%);
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Space Grotesk;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+label{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--Very-Dark-Violet);
+}
+
+button{
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    background-color: var(--Very-Dark-Violet);
+    color: var(--White);
+}
+
+
+input{
+    padding: 0.55rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: var(--Light-Grayish-Violet);
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--Very-Dark-Violet);
+    
+}
+
+input:focus{
+    outline: transparent;
+    border-color: var(--Very-Dark-Violet);
+    cursor: pointer;
+}   
+
+input::placeholder{
+    color: var(--Light-Grayish-Violet);
+}

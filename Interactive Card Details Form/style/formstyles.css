@@ -1,0 +1,97 @@
+.container-form{
+    width: 70%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    max-width: 35%;
+
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-areas: "a a"
+                         "b b"
+                         "c d"
+                         "e e";
+    gap: 1.25rem;
+}
+.input-cardholder{
+    grid-area: a;
+}
+.input-cardnumber{
+    grid-area: b;
+}
+.input-expdate{
+    grid-area: c;
+}
+.input-cvc{
+    grid-area: d;
+}
+.button-confirm{
+    grid-area: e;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.input-expdate__container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.input-expdate__input{
+    width: 50%;
+}
+.input-cvc__input{
+    width: 100%;
+}
+
+
+.container-form-complete{
+    height: 50%;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.complete__details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.complete__details-title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--Very-Dark-Violet);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.complete__details-message{
+    color: var(--Dark-Grayish-Violet);
+}
+.button-continue{
+    width: 100%;
+}
+
+.hide{
+    display: none;
+}
+.error-text{
+    color: var(--error-Input-Border-Color);
+    font-size: 10px;
+}
+.error-border{
+    border-color: var(--error-Input-Border-Color);
+}

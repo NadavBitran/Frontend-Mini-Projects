@@ -1,0 +1,73 @@
+.container-visuals{
+    background-image: url("../images/bg-main-desktop.png");
+    background-size: cover;
+
+    width: 30%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.credit-card{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.credit-card label{
+    color: var(--White);
+}
+
+.credit-card__front{
+    background: url("../images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 1.5rem;
+    width: 447px;
+    height: 225px;
+
+    margin-left: 40%;
+
+    display: grid;
+    gap: 4rem;
+}
+.credit-card__back{
+    background: url("../images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 447px;
+    height: 225px;
+
+    display: grid;
+    margin-left: 55%;
+
+}
+
+.credit-card__front-details{
+    display: grid;
+    gap: 1.25rem;
+}
+
+.credit-card__name-and-exp{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.credit-card__number{
+    font-size: 26px;
+    letter-spacing: 5px;
+}
+
+.credit-card__cvc{
+    margin-top: 25%;
+    margin-left: 83%;
+}
+
