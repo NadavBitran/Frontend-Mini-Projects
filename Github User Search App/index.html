@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="./styles/globalstyle.css">
+
+</head>
+<body class="window--init-light">
+
+ <main>
+  <div class="title-container">
+    <label class="title-container__title">devfinder</label>
+    <div class="mode-container">
+      <label class="mode-container__text">Dark</label>
+      <img class="mode-container__icon" src="./assets/icon-moon.svg">
+    </div>
+  </div>
+
+  <div class="search-container  component--init-light">
+    <img class="search-container__icon" src="./assets/icon-search.svg">
+    <input type="text" class="search-container__search-bar" placeholder="Search GitHub username..."/>
+    <label class="search-container__message-error component--hide">No Results</label>
+    <button class="search-container__button">Search</button>
+  </div>
+
+  <div class="profile-container component--init-light">
+    <div class="profile-container-picture">
+      <img class="profile-container-picture__img" src="">
+    </div>
+      <div class="profile-container-details-main-data">
+        <label class="profile-container-details-main-data__name"></label>
+        <label class="profile-container-details-main-data__joindate"></label>
+        <label class="profile-container-details-main-data__hashtag"></label>
+      </div>
+      <div class="profile-container-details-bio"></div>
+      <div class="profile-container-details-stats">
+        <div class="profile-container-details-repos">
+          <label class="profile-container-details-repos__text">Repos</label>
+          <label class="profile-container-details-repos__number"></label>
+        </div>
+        <div class="profile-container-details-followers">
+          <label class="profile-container-details-followers__text">Followers</label>
+          <label class="profile-container-details-followers__number"></label>
+        </div>
+        <div class="profile-container-details-following">
+          <label class="profile-container-details-following__text">Following</label>
+          <label class="profile-container-details-following__number"></label>
+        </div>
+      </div>
+      <div class="profile-container-details-secondary-data">
+        <div class="profile-container-details-secondary-data-location">
+          <img class="profile-container-details-secondary-data-location__image" src="./assets/icon-location.svg">
+          <label class="profile-container-details-secondary-data-location__text"></label>
+        </div>
+        <div class="profile-container-details-secondary-data-twitter">
+          <img class="profile-container-details-secondary-data-twitter__image" src="./assets/icon-twitter.svg">
+          <label class="profile-container-details-secondary-data-twitter__text"></label>
+        </div>
+        <div class="profile-container-details-secondary-data-link">
+          <img class="profile-container-details-secondary-data-link__image" src="./assets/icon-website.svg">
+          <a class="profile-container-details-secondary-data-link__text" href=""></a>
+        </div>
+        <div class="profile-container-details-secondary-data-company">
+          <img class="profile-container-details-secondary-data-company__image" src="./assets/icon-company.svg">
+          <label class="profile-container-details-secondary-data-company__text"></label>
+        </div>
+    </div>
+  </div>
+
+ </main>
+
+ <script type="module" src="./scripts/eventscripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+.search-container__icon {
+  height: 20px;
+  padding-left: 0.75rem;
+}
+.search-container__search-bar {
+  flex: 0 0 70%;
+  font-size: 1rem;
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  padding: 0.75rem;
+}
+.search-container__search-bar:focus {
+  outline: none;
+}
+.search-container__search-bar::-moz-placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.search-container__search-bar::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.search-container__message-error {
+  flex: 0 0 90px;
+  color: red;
+}
+.search-container__button {
+  flex: 0 0 12%;
+  background-color: rgb(69, 103, 255);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 0.75rem;
+}
+.search-container__button:hover {
+  background-color: rgba(69, 103, 255, 0.644);
+}
+
+.text--error-message {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.profile-container {
+  height: 420px;
+  padding-block: 2.5rem;
+  padding-inline-end: 2.5rem;
+  border-radius: 5px;
+}
+.profile-container-picture {
+  display: flex;
+  justify-content: center;
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+.profile-container-picture__img {
+  height: 117px;
+  width: 117px;
+  border-radius: 50%;
+}
+.profile-container-details-main-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "name joindate" "hashtag hashtag";
+  gap: 0.5rem;
+}
+.profile-container-details-main-data__name {
+  grid-column: name;
+  font-size: 26px;
+  font-weight: 600;
+}
+.profile-container-details-main-data__joindate {
+  grid-column: joindate;
+  text-align: end;
+}
+.profile-container-details-main-data__hashtag {
+  grid-column: hashtag;
+  color: rgb(69, 103, 255);
+}
+.profile-container-details-bio {
+  overflow-y: auto;
+  height: 38px;
+  margin-top: 35px;
+}
+.profile-container-details-stats {
+  background-color: rgba(69, 103, 255, 0.644);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  font-size: 18px;
+  padding: 1.25rem;
+  margin-top: 20px;
+}
+.profile-container-details-repos, .profile-container-details-following, .profile-container-details-followers {
+  display: flex;
+  flex-direction: column;
+}
+.profile-container-details-secondary-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+.profile-container-details-secondary-data-location, .profile-container-details-secondary-data-link, .profile-container-details-secondary-data-company, .profile-container-details-secondary-data-twitter {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.profile-container-details-secondary-data-location__image, .profile-container-details-secondary-data-link__image {
+  width: 15px;
+}
+.profile-container-details-secondary-data-location__text, .profile-container-details-secondary-data-twitter__text, .profile-container-details-secondary-data-link__text, .profile-container-details-secondary-data-company__text {
+  max-width: 200px;
+}
+.profile-container-details-secondary-data-link__text {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title-container__title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.mode-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.mode-container__icon {
+  height: 25px;
+  width: 25px;
+}
+.mode-container__text {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    max-width: 560px;
+  }
+  .search-container__button {
+    flex: 0 0 15%;
+  }
+  .search-container__search-bar {
+    flex: 0 0 60%;
+  }
+  .profile-container {
+    height: 450px;
+    padding-inline-start: 2rem;
+  }
+  .profile-container-picture {
+    height: 117px;
+    float: left;
+  }
+  .profile-container-details-main-data {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+  .profile-container-details-main-data__joindate {
+    text-align: start;
+  }
+  .profile-container-details-bio {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  main {
+    max-width: 375px;
+  }
+  .profile-container {
+    height: 500px;
+    padding-block: 2.5rem;
+    padding-inline-end: 1.5rem;
+    font-size: 14px;
+  }
+  .profile-container-details-stats {
+    font-size: 14px;
+    gap: 2rem;
+  }
+  .profile-container-details-main-data {
+    margin-left: 6.5rem;
+  }
+  .profile-container-details-main-data__name {
+    font-size: 20px;
+  }
+  .profile-container-details-secondary-data {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-container-details-bio {
+    margin-top: 4rem;
+  }
+  .profile-container-picture {
+    margin-left: 0.75rem;
+  }
+  .search-container__search-bar {
+    flex: 0 0 60%;
+  }
+  .search-container__search-bar::-moz-placeholder {
+    font-size: 13px;
+  }
+  .search-container__search-bar::placeholder {
+    font-size: 13px;
+  }
+  .search-container__message-error {
+    font-size: 11px;
+    text-align: center;
+    max-width: 45px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 730px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.window--init-dark {
+  background-color: rgba(13, 20, 43, 0.527);
+  color: white;
+}
+.window--init-light {
+  background-color: rgb(224, 222, 222);
+  color: black;
+}
+.window--animation-dark {
+  animation: bgLightToDark 1s ease forwards;
+}
+.window--animation-light {
+  animation: bgDarkToLight 1s ease forwards;
+}
+
+.component--init-dark {
+  background-color: rgb(14, 18, 46);
+}
+.component--init-light {
+  background-color: rgb(255, 255, 255);
+}
+.component--animation-dark {
+  animation: cmLightToDark 0.75s ease forwards;
+}
+.component--animation-light {
+  animation: cmDarkToLight 0.75s ease forwards;
+}
+.component--hide {
+  visibility: hidden;
+}
+
+@keyframes bgLightToDark {
+  from {
+    background-color: rgb(224, 222, 222);
+    color: black;
+  }
+  to {
+    background-color: rgba(13, 20, 43, 0.527);
+    color: white;
+  }
+}
+@keyframes bgDarkToLight {
+  from {
+    background-color: rgba(13, 20, 43, 0.527);
+    color: white;
+  }
+  to {
+    background-color: rgb(224, 222, 222);
+    color: black;
+  }
+}
+@keyframes cmLightToDark {
+  from {
+    background-color: rgb(255, 255, 255);
+  }
+  to {
+    background-color: rgb(14, 18, 46);
+  }
+}
+@keyframes cmDarkToLight {
+  from {
+    background-color: rgb(14, 18, 46);
+  }
+  to {
+    background-color: rgb(255, 255, 255);
+  }
+}/*# sourceMappingURL=globalstyle.css.map */

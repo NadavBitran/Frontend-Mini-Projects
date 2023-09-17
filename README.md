@@ -16,6 +16,7 @@ Welcome to my personal repository where I showcase a collection of web developme
 
 ## 📂 Projects Included
 1. 💳 **Interactive Credit Card Form**: This project features an interactive credit card form that allows users to input their credit card details. It also includes a dynamic visual representation of the credit card that changes its values in real-time as the user types. Additionally, the project incorporates client-side validation to ensure that the entered inputs are valid and meet the necessary criteria.
+2. 🔍 **Github User Search App**: This project features a tool that allows users to search for and retrieve information about Github users with the help of Github's REST API. Additionaly, the project incoporates option to switch between 'dark' and 'light' modes.
 
 ## 📚 Getting Started
 
@@ -40,5 +41,3 @@ The project ideas included in this repository are sourced from [Frontend Mentor]
 Frontend Mentor offers a wide range of projects, from beginner to advanced levels, covering various aspects of web development, including HTML, CSS, JavaScript, and responsive design. These projects have been a valuable resource for enhancing my web development skills, and I highly recommend checking out their website for more challenges and opportunities to level up your front-end skills.
 
 🌐 [Frontend Mentor Website](https://www.frontendmentor.io/)
-
-## 🌟 Enjoy exploring my journey as a web developer as I continue to learn and grow through these projects!

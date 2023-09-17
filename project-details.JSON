@@ -1,0 +1,20 @@
+{
+    "Projects" : [
+        {
+            "Title":"Interactive Card Details Form",
+            "Description": "An interactive credit card form that allows users to input their credit card details",
+            "Technologies": ["HTML","CSS","JS"],
+            "Photo": "Interactive Card Details Form/app-image/showcase-screen.png",
+            "Repo": "https://github.com/NadavBitran/Frontend-Mini-Projects/tree/main/Interactive%20Card%20Details%20Form",
+            "Site": "https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw"
+        } ,
+        {
+            "Title":"Github User Search App",
+            "Description": "A tool that allows users to search for and retrieve information about Github users",
+            "Technologies": ["HTML","SCSS","JS","API"],
+            "Photo": "Github User Search App/app-image/showcase-screen.png",
+            "Repo": "https://github.com/NadavBitran/Frontend-Mini-Projects/tree/main/Github%20User%20Search%20App",
+            "Site": "https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6"
+        }
+    ]
+}

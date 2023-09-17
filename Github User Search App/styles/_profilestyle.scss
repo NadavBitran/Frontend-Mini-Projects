@@ -1,0 +1,106 @@
+.profile-container{
+    height: 420px;
+
+    padding-block: 2.5rem;
+    padding-inline-end: 2.5rem;
+
+    border-radius: 5px;
+
+    &-picture{
+        display: flex;
+        justify-content: center;
+
+        float: left;
+
+        height: 100%;
+        width: 25%;
+    
+        &__img{
+            height: 117px;
+            width: 117px;
+            border-radius: 50%;
+        }
+    }
+
+    &-details{
+        &-main-data{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "name joindate"
+                                  "hashtag hashtag";
+            gap: .5rem;
+            
+            &__name{
+                grid-column: name;
+
+                font-size: 26px;
+                font-weight: 600;
+            }
+
+            &__joindate{
+                grid-column: joindate;
+
+                text-align: end;
+            }
+
+            &__hashtag{
+                grid-column: hashtag;
+
+                color: $secondary-color-light-blue-strong;
+            }
+        }
+
+        &-bio{
+            overflow-y: auto;
+            height: 38px;
+
+            margin-top: 35px;
+        }
+
+        &-stats{
+            background-color: $secondary-color-light-blue-weak;
+            border-radius: 10px;
+            
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+        
+            font-size: 18px;
+            padding: 1.25rem;
+
+            margin-top: 20px;
+        }
+
+        &-repos , &-following , &-followers{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-secondary-data{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+
+            margin-top: 20px;
+
+            &-location, &-link , &-company, &-twitter{
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+            }
+
+            &-location__image , &-link__image{
+                width: 15px;
+            }
+            
+            &-location__text , &-twitter__text , &-link__text , &-company__text{
+                max-width: 200px;
+            }
+
+            &-link__text{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}

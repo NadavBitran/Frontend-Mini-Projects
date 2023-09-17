@@ -1,0 +1,129 @@
+$background-body-white: rgb(224, 222, 222);
+$background-body-black: rgba(13, 20, 43, 0.527);
+
+$background-component-white: rgb(255, 255, 255);
+$background-component-black: rgb(14, 18, 46);
+
+$secondary-color-light-blue-strong: rgb(69, 103, 255);
+$secondary-color-light-blue-weak: rgba(69, 103, 255, 0.644);
+
+
+@import "./searchstyle";
+@import "./profilestyle";
+@import "./titlestyle";
+
+@import "./tabletmodestyle";
+@import "./mobilemodestyle";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    box-sizing: border-box;
+
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 730px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.window{
+
+    &--init-dark{
+        background-color: $background-body-black;
+        color: white;
+    }
+
+    &--init-light{
+        background-color: $background-body-white;
+        color: black;
+    }
+    &--animation-dark{
+        animation: bgLightToDark 1s ease forwards;
+    }
+
+    &--animation-light{
+        animation: bgDarkToLight 1s ease forwards;
+    }
+}
+
+.component{
+
+    &--init-dark{
+        background-color: $background-component-black;
+    }
+
+    &--init-light{
+        background-color: $background-component-white;
+    }
+
+    &--animation-dark{
+        animation: cmLightToDark .75s ease forwards;
+    }
+
+    &--animation-light{
+        animation: cmDarkToLight .75s ease forwards;
+    }
+
+    &--hide{
+        visibility: hidden;
+    }
+}
+
+@keyframes bgLightToDark{
+    from{
+        background-color: $background-body-white;
+        color: black;
+    }
+    to{
+        background-color: $background-body-black;
+        color: white;
+    }
+}
+
+@keyframes bgDarkToLight{
+    from{
+        background-color: $background-body-black;
+        color: white;
+    }
+    to{
+        background-color: $background-body-white;
+        color: black;
+    }
+}
+
+@keyframes cmLightToDark{
+    from{
+        background-color: $background-component-white;
+    }
+    to{
+        background-color: $background-component-black;
+    }
+}
+
+@keyframes cmDarkToLight{
+    from{
+        background-color: $background-component-black;
+    }
+    to{
+        background-color: $background-component-white;
+    }
+}

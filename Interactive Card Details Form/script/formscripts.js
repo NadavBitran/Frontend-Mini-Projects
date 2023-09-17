@@ -21,9 +21,9 @@ export const onlineClientSideValidation = (type) => {
                 user_number.value = user_number.value.slice(0, user_number.value.length - 1)
             }
 
-            if(user_number.value.length % 5 === 4 && user_number.value.length < 19)
+            if(user_number.value.length > 0 && user_number.value.length % 5 === 0 && user_number.value.length < 19)
             {
-                user_number.value = `${user_number.value} `;
+                user_number.value = `${user_number.value.substring(0 , user_number.value.length - 1)} ${user_number.value[user_number.value.length - 1]}`;
             }
             break;
     }

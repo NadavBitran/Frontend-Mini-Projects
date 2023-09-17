@@ -1,0 +1,40 @@
+@media only screen and (max-width: 800px){
+    main{
+        max-width: 560px;
+    }
+
+    .search-container{
+        &__button{
+            flex: 0 0 15%;
+        }
+        &__search-bar{
+            flex: 0 0 60%;
+        }
+    }
+    
+    .profile-container{
+        height: 450px;
+        padding-inline-start: 2rem;
+
+        &-picture{
+            height: 117px;
+            float: left;
+        }
+        &-details{
+            &-main-data{
+            display: flex;
+            flex-direction: column;
+    
+            padding-left: 2rem;
+
+              &__joindate{
+                 text-align: start;
+                }
+            }
+            &-bio{
+                margin-top: 50px;
+            }
+        }
+    }
+
+}

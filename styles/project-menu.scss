@@ -1,0 +1,180 @@
+// ============= IMPORTS SECTION ============= :
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Roboto:wght@400;500&display=swap');
+@import './project-card';
+// ============= VARIABLES SECTION =============:
+
+
+$html-color: #E16428;
+$css-color: #0070BB;
+$js-color: #F0DB4F;
+$react-color: #61DAFB;
+$scss-color: #CD6799;
+$api-color: #147714;
+$bg-color: #F8F8FF;
+
+// ============= LAYOUT SECTION =============:
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana , Georgia , serif;
+    font-size: 1rem;
+
+    
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+body{
+    background-image: url("/images/bg-app.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper{
+    max-width: 1350px;
+    margin: 0px auto;
+}
+.header{ 
+    background-color: $bg-color;
+    height: 90px; 
+    margin: 10px; 
+    border-radius: 5px;
+
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+
+    &-info{
+        text-align: center;
+
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        display: grid;
+        gap: 1rem;
+    }
+}
+.main{
+    border-radius: 5px;
+    font-size: 120%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+
+} 
+.navbar{ 
+    background-color: $bg-color;
+    margin: 10px; 
+    border-radius: 5px;
+
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+
+    ul{
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        list-style-type: none;
+        li{
+            display: inline;
+            margin-inline: 1em;
+            &:hover{
+                background-color: black;
+                color: $bg-color;
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
+.footer{
+    background-color: $bg-color;
+    margin: 10px;
+    border-radius: 5px;
+
+    clear: both; 
+
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+
+    ul{
+        padding: 5px;
+        margin: 10px;
+        list-style-type: none;
+
+        li , p {
+            margin-block: 1em;
+        }
+
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                gap: .5em;
+                
+                text-decoration: none;
+                color: inherit;
+            }
+            img{
+                width: 20px;
+            }
+        }
+    }
+
+}
+
+// ============= HEADING SECTION =============
+h1{
+    font-size: 150%;
+}
+h3{
+    font-size: 110%;
+}
+
+// ============= BUTTON SECTION =============
+button{
+    padding: .5em;
+    padding-inline: 1.5em;
+
+    background-color: white;
+    border: none;
+
+    color: black;
+
+    &:hover{
+        color: white;
+        background-color: black;
+    }
+}
+
+// ============= LANGUAGES COLORING SECTION =============
+.tech-item{
+    &__html{
+        color: $html-color;
+    }
+    &__css{
+        color: $css-color;
+    }
+    &__js{
+        color: $js-color;
+    }
+    &__scss{
+        color: $scss-color;
+    }
+    &__react{
+        color: $react-color;
+    }
+    &__api{
+        color: $api-color;
+    }
+}
+
+@media (max-width: 650px){
+    .navbar ul{
+        text-align: center;
+
+        li{
+            display: block;
+            margin-block: .5em;
+        }
+    }
+}

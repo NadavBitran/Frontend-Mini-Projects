@@ -1,0 +1,47 @@
+$bg-color: #F8F8FF;
+
+
+.project{
+    background-color: $bg-color;
+    margin: 10px;
+
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+
+    &__image{
+        width: 100%;
+        object-fit: cover;
+    }
+    &-details{
+        padding-inline: 1.5em;
+        padding-block-end: 1.5em;
+
+        display: grid;
+        gap: .75em;
+
+        &__title{
+            margin-top: 1em;
+            font-size: 105%;
+
+            height: 40px;
+        }
+        &__tech-list{
+            display: flex;
+            gap: 1.5em;
+        }
+    }
+    &__button-list{
+        padding-inline: 1.5em;
+        display: flex;
+        justify-content: center;
+        gap: .75em;
+
+        margin-bottom: .75em;
+    }
+}
+
+.project__image-container{
+    max-width: 100%;
+    max-height: 55%;
+
+    overflow: hidden;
+}

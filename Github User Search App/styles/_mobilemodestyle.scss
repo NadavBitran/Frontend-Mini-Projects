@@ -1,0 +1,52 @@
+@media only screen and (max-width: 580px){
+    main{
+        max-width: 375px;
+    }
+
+    .profile-container{
+        height: 500px;
+
+        padding-block: 2.5rem;
+        padding-inline-end: 1.5rem;
+
+        font-size: 14px;
+        &-details{
+            &-stats{
+                font-size: 14px;
+                gap: 2rem; 
+            }
+            &-main-data{
+                margin-left: 6.5rem;
+                &__name{
+                    font-size: 20px;
+                }
+            }
+            &-secondary-data{
+                display: flex;
+                flex-direction: column;
+            }
+            &-bio{
+                margin-top: 4rem;
+            }
+        }
+        &-picture{
+            margin-left: .75rem;
+        }
+
+    }
+    .search-container{
+        &__search-bar{
+            flex: 0 0 60%; 
+
+            &::placeholder{
+                font-size: 13px;
+            }
+        }
+        &__message-error{
+            font-size: 11px;
+            text-align: center;
+            max-width: 45px;
+        }
+    }
+
+}
