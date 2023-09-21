@@ -29,6 +29,7 @@ const message_error = search_container.querySelector(".search-container__message
 
 const apiUrl = "https://api.github.com/users";
 let currentLightMode = "light";
+
 // ---------------------------------------
 
 
@@ -39,7 +40,10 @@ mode_container.addEventListener("click" , () => changeCurrentMode(currentLightMo
 
 search_container_button.addEventListener("click" , () => fetchUser(search_container_search_bar.value));
 
-window.addEventListener("load" , () => {detectBroswersColorScheme(); fetchUser("Octocat")});
+window.addEventListener("load" , () => {
+    detectBroswersColorScheme(); 
+    profile_container.classList.add("component--hide-all");
+    fetchUser("Octocat")});
 
 search_container_search_bar.addEventListener("input" , () => !message_error.classList.contains("component--hide") && message_error.classList.add("component--hide"));
 
@@ -104,9 +108,6 @@ async function fetchUser(userName) {
         handleRequestError(); 
     }
     
-
-
-    
     function handleRequestSuccess(data){
             const months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
                              "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -115,6 +116,7 @@ async function fetchUser(userName) {
             const joindate_year = joindate.getUTCFullYear();
             const joindate_month = months[joindate.getUTCMonth()];
             const joindate_day = joindate.getUTCDay();
+
 
             profile_image.src = data["avatar_url"];
             profile_name.innerHTML = data["name"] === null ? data["login"] : data["name"];
@@ -128,7 +130,10 @@ async function fetchUser(userName) {
             profile_twitter.innerHTML = data["twitter_username"] === null ? "Not Avaliable" : data["twitter_username"];
             profile_link.innerHTML = data["html_url"].substring(data["html_url"].indexOf('/') + 2);
             profile_link.href = data["html_url"]; 
-            profile_company.innerHTML = data["company"] === null ? "Not Avaliable" : data["company"];    
+            profile_company.innerHTML = data["company"] === null ? "Not Avaliable" : data["company"];
+            
+            profile_container.classList.contains("component--hide-all") && profile_container.classList.remove("component--hide-all");
+
     }
     function handleRequestError(){
         message_error.classList.remove("component--hide");

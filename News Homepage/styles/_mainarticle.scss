@@ -1,0 +1,90 @@
+@import "./variables";
+
+// ========== MAIN ARTICLE SECTION ==========
+.main-article{
+    grid-area: mainarticle;
+
+
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    grid-template-columns: repeat(2 , 1fr);
+    
+    &--image{
+        grid-column: 1 / span 2;
+        width: 100%;
+    }
+    &--title{
+        grid-column: 1 / 2;
+        font-size: 310%;
+
+        line-height: 3.25rem;
+    }
+    &--description{
+        grid-column: 2 / 3;
+
+
+        p{
+            font-size: 90%;
+        }
+        
+        button{
+            padding: 0.9rem 1.8rem;
+            border: none;
+            outline: none;
+
+            background-color: $softRed;
+            color: $offWhite;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            margin-top: 1.5rem;
+
+            position: relative;
+            bottom: 0;
+
+            &:hover{
+                background-color: $veryDarkBlue;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @include lg{
+        display: block;
+            &--title{
+                padding-block: 1rem;
+                font-size: 225%;
+                line-height: 2.5rem;
+            }
+            &--description{
+
+                button{
+                    position: relative;
+                }
+            }
+    }
+    @include md{
+        &--title{
+            font-size: 200%;
+            line-height: 2.5rem;
+        }
+        &--description{
+            font-size: 100%;
+        }
+    }
+    @include sm{
+        &--image{
+            content: url("../assets/images/image-web-3-mobile.jpg");
+        }
+        &--title{
+            font-size: 225%;
+        }
+    }
+    @include xs{
+        &--title{
+            font-size: 200%;
+            line-height: 2rem;
+        }
+    }
+}

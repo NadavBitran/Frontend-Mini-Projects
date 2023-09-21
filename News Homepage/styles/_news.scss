@@ -1,0 +1,59 @@
+@import "./variables";
+
+// ========== NEWS SECTION ==========
+.news{
+    grid-area: news;
+    padding: 2rem;
+    padding-left: 1.8rem;
+    background-color: $veryDarkBlue;
+
+    display: grid;
+    gap: 1.5rem;
+
+    hr{
+        height: 1px;
+        border: none;
+        background-color: $darkGrayishBlue;
+    }
+    h1{
+        color: $softOrange;
+        font-size: 225%;
+    }
+}
+
+.news__article{
+
+    &--title{
+        a{
+            color: $offWhite;
+            &:hover{
+                color: $softOrange;
+                cursor: pointer;
+            }
+        }
+    }
+    &--description{
+        padding-top: .75rem;
+        color: $grayishBlue;
+    }
+
+    @include lg{
+        &--title{
+            font-size: 105%;
+        }
+        &--description{
+            font-size: 90%;
+        }
+    }
+    @include md{
+        &--title{
+            font-size: 95%;
+        }
+        &--description{
+            font-size: 85%;
+        }
+    }
+    @include sm{
+        padding-block: 1.5rem;
+    }
+}

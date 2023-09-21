@@ -18,9 +18,10 @@
 }
 
 body{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 30vw 70vw;
     width: 100%;
+    min-height: 100vh;
 }
 
 label{

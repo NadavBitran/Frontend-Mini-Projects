@@ -1,0 +1,55 @@
+.popup-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.664);
+
+   @include flexboxCentered(center , 0em);
+}
+.popup{
+    position: relative;
+    background-color: $bg-color;
+    max-width: 700px;
+    max-height: 90vh;
+    margin: 30px;
+    overflow: auto;
+    
+    @include styleScrollBar;
+
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+
+    &__collapse-icon{
+        position: sticky;
+        top: 0;
+        left: calc(100% - 27px);
+
+        @include opacityHoverAnimation;
+    }
+    
+
+    &__details{
+        padding-inline: 1.5em;
+        padding-block: .75em;
+        display: grid;
+        gap: 1.5em;
+    }
+
+    &__image{
+        width: 100%;
+    }
+    &__image-nav{
+        @include flexbox(row , 0em , space-between);
+    }
+    &__left-arrow , &__right-arrow{
+        @include opacityHoverAnimation;
+    }
+    &__button-list{
+        @include flexbox(row, 1em , center);
+
+        margin-bottom: 1em;
+    }
+}

@@ -1,0 +1,50 @@
+// ============= MIXIN SECTION =============
+@mixin reset{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+@mixin blockCentered{
+    display: block;
+    margin: 0 auto;
+}
+@mixin flexbox ($flexDirection: auto , $gap: 0em , $justifyContent: flex-start , $alignItems: flex-start , $flexWrap: nowrap){
+    display: flex;
+    flex-direction: $flexDirection;
+    gap: $gap;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-wrap: $flexWrap;
+}
+@mixin flexboxCentered($flexDirection: auto , $gap: 0em){
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}
+@mixin flexboxHorizontallyCentered ($flexDirection: auto , $gap: 0em){
+    display: flex;
+    gap: $gap;
+    @if $flexDirection == row or $flexDirection == auto{
+        flex-direction: row;
+        justify-content: center;
+   }
+   @else{
+        flex-direction: column;
+        align-items: center;
+   }
+}
+@mixin flexboxVerticallyCenetered ($flexDirection: auto , $gap: 0em){
+    display: flex;
+    gap: $gap;
+    @if $flexDirection == row or $flexDirection == auto{
+        flex-direction: row;
+        align-items: center;
+    }
+    @else{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

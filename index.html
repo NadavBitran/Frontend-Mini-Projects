@@ -8,14 +8,10 @@
     <link rel="stylesheet" href="./styles/project-menu.css">
 </head>
 <body>
-    
-   <div class="wrapper">
-    
+    <div class="wrapper">
         <div class="header">
-            <div class="header-info">
-                <h1>my projects list</h1>
-                <h3>A Navigation Menu Between The Projects</h3>
-            </div>
+            <h1>my projects list</h1>
+            <h3>A Navigation Menu Between The Projects</h3>
         </div>
         <div class="navbar">
             <ul>
@@ -28,14 +24,27 @@
         <div class="main">
         </div>
         <div class="footer">
-            <ul>
-                <li>
-                    <a href="mailto: nadavbitran@gmail.com"><img src="./images/email.svg">Contact Me</a>
+            <ul class="footer__items">
+                <li class="footer__item">
+                    <a href="mailto: nadavbitran@gmail.com" target="_blank"><img class="icon" src="./images/email.svg"><p>Contact Me</p></a>
                 </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/nadavbitran/"><img src="./images/linkedin.svg">My Linkdin</a>
+                <li class="footer__item">
+                    <a href="https://www.linkedin.com/in/nadavbitran/" target="_blank"><img class="icon" src="./images/linkedin.svg"><p>My Linkedin</p></a>
                 </li>
             </ul>
+        </div>
+    </div>
+    <div class="popup-overlay hide-element">
+        <div class="popup">
+            <img class="popup__collapse-icon icon" src="./images/expand.svg">
+            <div class="popup__details">
+
+            </div>
+            <img class="popup__image" src="">
+            <div class="popup__image-nav">
+                <img class="popup__left-arrow icon" src="./images/left-arrow.svg">
+                <img class="popup__right-arrow icon" src="./images/right-arrow.svg">
+            </div>
         </div>
     </div>
 

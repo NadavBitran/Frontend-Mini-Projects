@@ -31,7 +31,6 @@ body{
     min-height: 100vh;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -84,6 +83,9 @@ main{
     }
 
     &--hide{
+        visibility: hidden;
+    }
+    &--hide-all > div{
         visibility: hidden;
     }
 }

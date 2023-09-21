@@ -1,0 +1,76 @@
+@import "./variables";
+
+
+// ========== SUB ARTICLES SECTION ==========
+.sub-articles{
+    grid-area: subarticles;
+
+    width: 100%;
+
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+
+    row-gap: 2rem;
+
+
+    // because there's no footer
+    margin-bottom: 2rem;
+
+    @include lg{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    @include sm{
+        grid-template-columns: 1fr;
+    }
+}
+.sub-article{
+    &--details{
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        display: grid;
+        gap: .5rem;
+    }
+    &--image{
+        float: left;
+        width: 90px;
+    }
+    &--title{
+        a{
+            color: $veryDarkBlue;
+            &:hover{
+                color: $softRed;
+                cursor: pointer;
+            }
+        }
+        font-size: 105%;
+    }
+    &--number{
+        color: $grayishBlue;
+        font-size: 175%;
+    }
+    &--description{
+        font-size: 90%;
+    }
+
+    @include lg{
+        &--title{
+            font-size: 105%;
+        }
+    }
+    @include md{
+        &--title{
+            font-size: 95%;
+        }
+        &--description{
+            font-size: 85%;
+        }
+    }
+    @include sm{
+        @include flexboxVerticallyCenetered(row);
+
+        &--details{
+            gap: .1rem;
+        }
+    }
+}

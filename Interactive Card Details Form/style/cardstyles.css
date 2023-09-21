@@ -1,27 +1,25 @@
 .container-visuals{
+    width: 500px;
+    position: relative;
     background-image: url("../images/bg-main-desktop.png");
     background-size: cover;
+}
 
-    width: 30%;
-    min-height: 100%;
-
+.credit-card__container{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 7rem;
 }
 
-.credit-card{
-    position:absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-}
-
-.credit-card label{
+.credit-card__front label , .credit-card__back label{
     color: var(--White);
 }
 
 .credit-card__front{
+    position: absolute;
     background: url("../images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,12 +28,14 @@
     width: 447px;
     height: 225px;
 
-    margin-left: 40%;
+    top: 20%;
+    left: 25%;
 
     display: grid;
     gap: 4rem;
 }
 .credit-card__back{
+    position: absolute;
     background: url("../images/bg-card-back.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,9 +43,11 @@
     width: 447px;
     height: 225px;
 
-    display: grid;
-    margin-left: 55%;
+    bottom: 20%;
+    left: 50%;
 
+
+    display: grid;
 }
 
 .credit-card__front-details{
@@ -69,5 +71,6 @@
 .credit-card__cvc{
     margin-top: 25%;
     margin-left: 83%;
+    font-size: 1rem;
 }
 

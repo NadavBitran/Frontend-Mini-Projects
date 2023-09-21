@@ -1,0 +1,96 @@
+.hamburger-menu{
+    display: none;
+    position: fixed;
+    transform: translateX(100%);
+    opacity: 0;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    z-index: 2;
+    background-color: $offWhite; 
+
+    transition: transform 0.5s ease-in-out , opacity 0.5s ease-in-out;
+
+    @include sm{
+        display: block;
+    }
+}
+.hamburger-icon{
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+
+    @include sm{
+        display: block;
+    }
+}
+.hamburger-icon input{
+    position: absolute;
+    opacity: 0;
+    width: 30px;
+    height: 20px;
+    z-index: 4;
+}
+.hamburger-icon span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: rotate(0deg);
+    opacity: 1;
+    left: 0%;
+
+    transition: transform 0.5s ease-in-out , top 0.5s ease-in-out , left 0.5s ease-in-out , width 0.5s ease-in-out;
+
+    &:nth-child(1){
+        top: 0px;
+    }
+    &:nth-child(2) , &:nth-child(3){
+        top: 8px;
+    }
+    &:nth-child(4){
+        top: 16px;
+    }
+
+}
+.hamburger-icon:has(input:checked){
+    > span{
+        &:nth-child(1) , &:nth-child(4){
+            top: 8px;
+            width: 0%;
+            left: 50%;
+        }
+        &:nth-child(2){
+            transform: rotate(45deg);
+        }
+        &:nth-child(3){
+            transform: rotate(-45deg);
+        }
+    }
+    ~ .hamburger-menu{
+        transform: translateX(0%);
+        opacity: 1; 
+    }
+}
+
+
+
+.hamburger-bar{
+    @include flexbox(column , 1.5rem);
+    position: relative;
+    top: 12rem;
+    left: 2rem;
+
+    a{
+        color: black;
+
+        &:hover{
+            color: $softRed;
+        }
+    }
+}
+

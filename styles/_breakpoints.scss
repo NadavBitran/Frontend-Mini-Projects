@@ -1,0 +1,100 @@
+@media (max-width: 1536px){ 
+    .wrapper{
+        max-width: 1100px;
+    }
+} // 2xl
+@media (max-width: 1280px){
+    .wrapper{
+        max-width: 950px;
+    }
+} // xl
+@media (max-width: 1024px){
+    .wrapper{
+        max-width: 680px;
+    }
+    .popup{
+        max-width: 630px;
+    }
+    h1{
+        font-size: 125%;
+    }
+    strong, h2,h3{
+        font-size: 100%;
+    }
+    a, p , li{
+        font-size: 90%;
+    }
+    button{
+        padding-inline: 1.25em;
+    }
+} // lg
+@media (max-width: 768px){
+    .wrapper{
+        max-width: 550px;
+    }
+    .popup{
+        max-width: 500px;
+    }
+    .navbar ul{
+        text-align: center;
+
+        li{
+            display: block;
+            margin-block: .5em;
+        }
+    }
+} // md
+@media (max-width: 640px){
+    .wrapper{
+        max-width: 400px;
+    }
+    .popup{
+        max-width: 375px;
+
+        &__details{
+            padding-inline: .75em;
+            padding-block: .5em;
+        }
+    }
+    strong, h1{
+        font-size: 105%;
+    }
+    h2,h3{
+        font-size: 90%;
+    }
+    a, li{
+        font-size: 85%;
+    }
+
+    // Disable scrollbar for mobile devices
+    body , .popup{
+        // Disable scrollbar for: Chrome , Safari , Opera
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        // Disable scrollbar for IE, Edge, Firefox
+        -ms-overflow-style: none;
+        scrollbar-width: 0;
+    }
+} // sm
+@media (max-width: 475px){
+    .wrapper{
+        max-width: 330px;
+    }
+
+    body{
+        // Overriding overflow property in special case when the Popup Window Feature active before the media query
+        overflow: auto !important;
+    }
+    
+    // Removing Popup Window Feature for extra small devices
+    .popup , .popup-overlay , .project__expand-icon{
+        display: none;
+    }
+    strong, h1{
+        font-size: 100%;
+    }
+    h2,h3{
+        font-size: 80%;
+    }
+} // xs

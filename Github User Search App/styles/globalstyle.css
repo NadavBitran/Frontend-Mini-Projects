@@ -242,7 +242,6 @@ body {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -282,6 +281,9 @@ main {
   animation: cmDarkToLight 0.75s ease forwards;
 }
 .component--hide {
+  visibility: hidden;
+}
+.component--hide-all > div {
   visibility: hidden;
 }
 

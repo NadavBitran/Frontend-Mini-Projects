@@ -1,10 +1,4 @@
-// ============= IMPORTS SECTION ============= :
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Roboto:wght@400;500&display=swap');
-@import './project-card';
 // ============= VARIABLES SECTION =============:
-
-
 $html-color: #E16428;
 $css-color: #0070BB;
 $js-color: #F0DB4F;
@@ -13,10 +7,42 @@ $scss-color: #CD6799;
 $api-color: #147714;
 $bg-color: #F8F8FF;
 
-// ============= LAYOUT SECTION =============:
+// ============= CUSTOM MIXIN =============
+@mixin opacityHoverAnimation(){
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out; 
+    &:hover{
+        opacity: 0.4;
+    }
+}
+@mixin styleScrollBar(){
+    &::-webkit-scrollbar{
+        width: .75em;
+        &-thumb{
+            background-color: black;
+
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.747);
+            }
+        }
+    }
+}
+
+// ============= IMPORTS SECTION ============= 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+// 1) GLOBAL MIXIN FILE
+@import "./mixin";
+
+// 2) PROJECT CARD AND POPUP CARD FILES
+@import './project-card';
+@import './popout-card';
+
+
+// ============= LAYOUT SECTION =============
 *{
-    margin: 0;
-    padding: 0;
+    @include reset;
+
     box-sizing: border-box;
     font-family: Verdana , Georgia , serif;
     font-size: 1rem;
@@ -30,36 +56,35 @@ body{
     background-image: url("/images/bg-app.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    min-height: 100vh;
+    width: 100%;
+
+    @include styleScrollBar;
 }
 .wrapper{
+    @include blockCentered;
+
     max-width: 1350px;
-    margin: 0px auto;
 }
 .header{ 
     background-color: $bg-color;
-    height: 90px; 
-    margin: 10px; 
+    height: 90px;
+    margin: 10px;
+    padding: 1em;
     border-radius: 5px;
 
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
 
-    &-info{
-        text-align: center;
-
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-
-        display: grid;
-        gap: 1rem;
-    }
+    text-align: center;
+    @include flexboxVerticallyCenetered(column , 1em);
 }
 .main{
     border-radius: 5px;
     font-size: 120%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
 
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(280px , 1fr));
 } 
 .navbar{ 
     background-color: $bg-color;
@@ -72,7 +97,6 @@ body{
         padding: 10px;
         margin: 10px;
         text-align: center;
-        list-style-type: none;
         li{
             display: inline;
             margin-inline: 1em;
@@ -96,38 +120,30 @@ body{
 
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
 
-    ul{
+    &__items{
         padding: 5px;
         margin: 10px;
-        list-style-type: none;
-
-        li , p {
-            margin-block: 1em;
-        }
-
-        li{
-            a{
-                display: flex;
-                align-items: center;
-                gap: .5em;
-                
-                text-decoration: none;
-                color: inherit;
-            }
-            img{
-                width: 20px;
-            }
+    }
+    &__item{
+        margin-block: 1em;
+        a{
+            @include flexboxVerticallyCenetered(row , .5em);
+            text-decoration: none;
+            color: inherit;
         }
     }
-
 }
 
-// ============= HEADING SECTION =============
+
+// ============= FONT SIZES SECTION =============
 h1{
     font-size: 150%;
 }
-h3{
+h2 , h3{
     font-size: 110%;
+}
+p , a , li{
+    font-size: 100%;
 }
 
 // ============= BUTTON SECTION =============
@@ -136,16 +152,23 @@ button{
     padding-inline: 1.5em;
 
     background-color: white;
-    border: none;
-
     color: black;
+
+    border: none;
 
     &:hover{
         color: white;
         background-color: black;
     }
 }
-
+// ============= UNORDERED LIST SECTION =============
+ul{
+    list-style-type: none;
+}
+// ============= ICON SECTION =============
+.icon{
+    max-width: 25px;
+}
 // ============= LANGUAGES COLORING SECTION =============
 .tech-item{
     &__html{
@@ -167,14 +190,16 @@ button{
         color: $api-color;
     }
 }
+.tech-list{
+    @include flexbox(row , 1.5em);
+}
+// ============= MEDIA SECTION =============
+@import "./breakpoints";
 
-@media (max-width: 650px){
-    .navbar ul{
-        text-align: center;
-
-        li{
-            display: block;
-            margin-block: .5em;
-        }
-    }
+// ============= ADDITIONAL CLASSES =============
+.hide-element{
+    display: none;
+}
+.hide-overflow{
+    overflow: hidden;
 }

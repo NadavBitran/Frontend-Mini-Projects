@@ -17,6 +17,7 @@ Welcome to my personal repository where I showcase a collection of web developme
 ## 📂 Projects Included
 1. 💳 **Interactive Credit Card Form**: This project features an interactive credit card form that allows users to input their credit card details. It also includes a dynamic visual representation of the credit card that changes its values in real-time as the user types. Additionally, the project incorporates client-side validation to ensure that the entered inputs are valid and meet the necessary criteria.
 2. 🔍 **Github User Search App**: This project features a tool that allows users to search for and retrieve information about Github users with the help of Github's REST API. Additionaly, the project incoporates option to switch between 'dark' and 'light' modes.
+3. 📰 **News Homepage**: This project features an example of news homepage website that includes a navigation bar, main articles, sub articles, and a news section, complete with a responsive design that supports an hamburger menu for mobile devices.
 
 ## 📚 Getting Started
 

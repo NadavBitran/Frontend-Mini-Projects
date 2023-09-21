@@ -1,20 +1,41 @@
 {
-    "Projects" : [
+    "Projects": [
         {
-            "Title":"Interactive Card Details Form",
+            "Title": "Interactive Card Details Form",
             "Description": "An interactive credit card form that allows users to input their credit card details",
-            "Technologies": ["HTML","CSS","JS"],
+            "Detailed_Description": "<h1>💳 Interactive Credit Card Form</h1>\n\n<h2>🌟 Overview</h2>\n\n<p>The Interactive Credit Card Form project is a web application that allows users to input their credit card details. It features a dynamic visual representation of a credit card that updates in real-time as users enter their information. Additionally, the project incorporates client-side validation to ensure the entered data is valid and meets the necessary criteria.</p>\n\n<h2>🚀 Key Features</h2>\n\n<ul>\n    <li><strong>Credit Card Form:</strong> Users can input credit card details, including card number, expiration date, CVV, and cardholder name.</li>\n    <li><strong>Client-side Validation:</strong> The application performs client-side validation to ensure that the entered details are valid and correctly formatted.</li>\n    <li><strong>Real-time Updates:</strong> As users type their information, a visual representation of the credit card updates to reflect the entered data, providing instant feedback.</li>\n</ul>\n\n<h2>Live Site</h2>\n\n<p>Explore the live version of the Github User Search App <a href='https://nadavbitran.github.io/Frontend-Mini-Projects/Interactive%20Card%20Details%20Form/'>Here</a>.</p>\n\n<h2>📝 Author</h2>\n\n<p>Nadav Bitran</p>\n\n<h2>📄 License</h2>\n\n<p>This project is open-source and available under the MIT License.</p>\n\n<h2>🌐 Project Inspiration</h2>\n\n<p>The idea for this project was inspired by challenges provided by <a href='https://www.frontendmentor.io/'>Frontend Mentor</a>.</p>",
+            "Technologies": ["HTML", "CSS", "JS"],
             "Photo": "Interactive Card Details Form/app-image/showcase-screen.png",
             "Repo": "https://github.com/NadavBitran/Frontend-Mini-Projects/tree/main/Interactive%20Card%20Details%20Form",
-            "Site": "https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw"
-        } ,
+            "Site": "https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw",
+            "Live": "https://nadavbitran.github.io/Frontend-Mini-Projects/Interactive%20Card%20Details%20Form",
+            "Additional_Photos": ["Interactive Card Details Form/app-image/normal-screen.png",
+                        "Interactive Card Details Form/app-image/error-screen.png",
+                        "Interactive Card Details Form/app-image/success-screen.png",
+                        "Interactive Card Details Form/app-image/tablet-screen.png"]
+        },
         {
-            "Title":"Github User Search App",
+            "Title": "Github User Search App",
             "Description": "A tool that allows users to search for and retrieve information about Github users",
-            "Technologies": ["HTML","SCSS","JS","API"],
+            "Detailed_Description": "<h1>🔍 Github User Search App</h1>\n\n<h2>🌟 Overview</h2>\n\n<p>The Github User Search App is a web application that allows users to search for and retrieve information about Github users. It leverages the Github REST API to fetch data, making it a valuable tool for exploring Github user profiles.</p>\n\n<h2>🚀 Key Features</h2>\n\n<ul>\n    <li><strong>User Search:</strong> Users can enter a Github username to search for specific user profiles.</li>\n    <li><strong>User Profile Display:</strong> The app displays detailed user information, including profile pictures, usernames, follower counts, and more.</li>\n    <li><strong>Real-time Data:</strong> The application fetches data in real-time from the Github REST API, ensuring that the information is up-to-date.</li>\n</ul>\n\n<h2>Live Site</h2>\n\n<p>Explore the live version of the Github User Search App <a href='https://nadavbitran.github.io/Frontend-Mini-Projects/Github%20User%20Search%20App/'>Here</a>.</p>\n\n<h2>📝 Author</h2>\n\n<p>Nadav Bitran</p>\n\n<h2>📄 License</h2>\n\n<p>This project is open-source and available under the MIT License.</p>\n\n<h2>🌐 Project Inspiration</h2>\n\n<p>The idea for this project was inspired by challenges provided by <a href='https://www.frontendmentor.io/'>Frontend Mentor</a>.</p>",
+            "Technologies": ["HTML", "SCSS", "JS", "API"],
             "Photo": "Github User Search App/app-image/showcase-screen.png",
             "Repo": "https://github.com/NadavBitran/Frontend-Mini-Projects/tree/main/Github%20User%20Search%20App",
-            "Site": "https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6"
+            "Site": "https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6",
+            "Live": "https://nadavbitran.github.io/Frontend-Mini-Projects/Github%20User%20Search%20App",
+            "Additional_Photos": ["Github User Search App/app-image/devfinder_dark.png",
+                                  "Github User Search App/app-image/devfinder_light.png"]
+        },
+        {
+            "Title": "News Homepage",
+            "Description": "an example of a news website homepage with mobile support",
+            "Detailed_Description": "<h1>📰 News Homepage</h1><h2>🌟 Overview</h2><p>The News Homepage project is an example of a news website homepage. It features a navigation bar, main articles, sub articles, and a news section, complete with a responsive design that supports a hamburger menu for mobile devices. This project showcases front-end web development skills in creating an engaging and functional news website layout.</p><h2>🚀 Key Features</h2><ul><li><strong>Navigation Bar:</strong> The homepage includes a navigation bar for easy access to different sections of the website.</li><li><strong>Main Articles:</strong> Prominent main articles are featured at the top of the page, highlighting the latest news.</li><li><strong>Sub Articles:</strong> Additional sub-articles provide users with a variety of news topics.</li><li><strong>News Section:</strong> A dedicated news section displays a stream of the latest updates and stories.</li><li><strong>Responsive Design:</strong> The project is responsive, adapting to different screen sizes, and includes a hamburger menu for mobile devices.</li></ul><h2>🌐 Live Site</h2><p>Explore the live version of the New Homepage <a href=`https://nadavbitran.github.io/Frontend-Mini-Projects/News%20Homepage`>Here</a>.</p><h2>📝 Author</h2><p>Nadav Bitran</p><h2>📄 License</h2><p>This project is open-source and available under the MIT License.</p><h2>🌐 Project Inspiration</h2><p>The idea for this project was inspired by challenges provided by <a href='https://www.frontendmentor.io/'>Frontend Mentor</a>.</p>",
+            "Technologies": ["HTML","SCSS","JS"],
+            "Photo": "News Homepage/app-image/normal-screen.png",
+            "Repo": "https://github.com/NadavBitran/Frontend-Mini-Projects/tree/main/News%20Homepage",
+            "Site": "https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl",
+            "Live": "https://nadavbitran.github.io/Frontend-Mini-Projects/News%20Homepage",
+            "Additional_Photos": ["News Homepage/app-image/normal-screen.png"]
         }
     ]
 }

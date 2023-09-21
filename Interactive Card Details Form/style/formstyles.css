@@ -1,22 +1,20 @@
 .container-form{
-    width: 70%;
-    min-height: 100vh;
-
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-form{
-    max-width: 35%;
 
+form{
+    width: 35%;
+    max-width: 550px; 
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
     grid-template-areas: "a a"
                          "b b"
                          "c d"
                          "e e";
-    gap: 1.25rem;
+    gap: 1.75rem;
 }
 .input-cardholder{
     grid-area: a;

@@ -12,6 +12,10 @@ The Interactive Credit Card Form project is a web application that allows users 
 
 - **Real-time Updates**: As users type their information, a visual representation of the credit card updates to reflect the entered data, providing instant feedback.
 
+## Live Site
+
+- Explore the live version of the Github User Search App [Here](https://nadavbitran.github.io/Frontend-Mini-Projects/Interactive%20Card%20Details%20Form/).
+
 ## 📝 Author
 Nadav Bitran
 
