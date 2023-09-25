@@ -1,0 +1,185 @@
+@use '../util' as *;
+
+$font-xxxsmall: 1.25rem;
+$font-xxsmall: 1.5rem;
+$font-xsmall: 2rem;
+$font-small: 2.5rem;
+$font-smeduim: 3.25rem;
+$font-meduim: 4rem;
+$font-large: 5.5rem;
+$font-xlarge: 9rem;
+
+
+.hero__title{
+    font-size: $font-xlarge;
+}
+.about__title{
+    font-size: $font-large;
+}
+.about__description{
+    font-size: $font-small;
+}
+.header__title{
+    font-size: clamp($font-small , 4rem + 2vw , 6rem);
+}
+.creations__title{ 
+    font-size: $font-large;
+}
+.creation__text{
+    font-size: $font-meduim;
+}
+.navbar__item a{
+    font-size: $font-small;
+}
+.footer__title{
+    font-size: $font-meduim;
+}
+.footer__navbar__item a{
+    font-size: $font-small;
+}
+.footer__copyright{
+    font-size: $font-small;
+}
+.hamburger-bar a{
+    font-size: $font-xsmall;
+}
+
+@include breakpoint(xl){
+    .hero__title{
+        font-size: $font-large;
+    }
+    .about__title{
+        font-size: $font-meduim;
+    }
+    .about__description{
+        font-size: $font-xsmall;
+    }
+    .creations__title{ 
+        font-size: $font-meduim;
+    }
+    .creation__text{
+        font-size: $font-meduim;
+    }
+    .footer__navbar__item a{
+        font-size: $font-xsmall;
+    }
+    .footer__copyright{
+        font-size: $font-xsmall;
+    }
+}
+@include breakpoint(l){
+    .header__title{
+        font-size: $font-meduim;
+    }
+    .hero__title{
+        font-size: $font-meduim;
+    }
+    .navbar__item a{
+        font-size: $font-xsmall;
+    }
+    .about__title{
+        font-size: $font-small;
+    }
+    .about__description{
+        font-size: $font-xxsmall;
+    }
+    .creations__title{ 
+        font-size: $font-small;
+    }
+    .creation__text{
+        font-size: $font-small;
+    }
+    .footer__title{
+        font-size: $font-small;
+    }
+    .footer__navbar__item a{
+        font-size: $font-xxsmall;
+    }
+    .footer__copyright{
+        font-size: $font-xxsmall;
+    }
+}
+@include breakpoint(m){
+    .header__title{
+        font-size: $font-small;
+    }
+    .hero__title{
+        font-size: $font-small;
+    }
+    .navbar__item a{
+        font-size: $font-xxsmall;
+    }
+    .about__title{
+        font-size: $font-xsmall;
+    }
+    .about__description{
+        font-size: $font-xxxsmall;
+    }
+    .creations__title{ 
+        font-size: $font-xsmall;
+    }
+    .creation__text{
+        font-size: $font-xsmall;
+    }
+    .footer__title{
+        font-size: $font-xsmall;
+    }
+    .footer__navbar__item a{
+        font-size: $font-xxxsmall;
+    }
+    .footer__copyright{
+        font-size: $font-xxxsmall;
+    }
+}
+@include breakpoint(s){
+    .hero__title{
+        font-size: $font-meduim;
+    }
+    .creation__text{
+        font-size: $font-small;
+    }
+    .about__title{
+        font-size: $font-small;
+    }
+    .about__description{
+        font-size: $font-xsmall;
+    }
+    .creations__title{
+        font-size: $font-small;
+    }
+    .footer__title{
+        font-size: $font-small;
+    }
+    .footer__navbar__item a{
+        font-size: $font-xxsmall;
+    }
+    .footer__copyright{
+        font-size: $font-xxsmall;
+    }
+}
+@include breakpoint(xxs){
+    .hero__title{
+        font-size: $font-smeduim;
+    }
+    .creation__text{
+        font-size: $font-xsmall;
+    }
+    .about__title{
+        font-size: $font-xsmall;
+    }
+    .about__description{
+        font-size: $font-xxsmall;
+    }
+    .creations__title{
+        font-size: $font-xsmall;
+    }
+    .footer__title{
+        font-size: $font-xsmall;
+    }
+    .footer__navbar__item a{
+        font-size: $font-xxxsmall;
+    }
+    .footer__copyright{
+        font-size: $font-xxxsmall;
+    }
+}

@@ -1,0 +1,181 @@
+@use "../globals" as *;
+@use "../util" as *;
+
+.creations{
+
+    margin-top: 15rem;
+
+    display: grid;
+    grid-template-areas: "title button"
+                           "list list";
+
+    &__title{
+        font-family: Josefin Sans;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        grid-area: title;
+    }
+    &__button{
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+
+        background-color: $white;
+        border-color: black;
+        border-width: 1px;
+        font-family: Alata;
+
+        grid-area: button;
+
+        width: 20rem;
+        height: 5rem;
+        font-size: 1.6rem;
+
+        align-self: center;
+        justify-self: end;
+
+        @include breakpoint(l){
+            width: 15rem;
+            height: 4rem;
+            font-size: 1.2rem;
+            letter-spacing: .8rem;
+        }
+        @include breakpoint(m){
+            width: 12rem;
+            height: 3rem;
+            font-size: .8rem;
+            letter-spacing: .6rem;
+        }
+        @include breakpoint(s){
+            width: 15rem;
+            height: 4rem;
+            font-size: 1.2rem;
+            letter-spacing: .8rem;
+        }
+
+        &:hover{
+            color: $white;
+            background-color: $black;
+        }
+    }
+
+    @include breakpoint(xl){
+        margin-top: 10rem;
+    }
+    @include breakpoint(l){
+        margin-top: 8rem;
+    }
+    @include breakpoint(m){
+        margin-top: 6rem;
+    }
+}
+.creations__list{
+    margin-top: 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4rem;
+
+    grid-area: list;
+
+    @include breakpoint(m){
+        gap: 3rem;
+    }
+}
+.creation{
+    position: relative;
+    &__image{
+        width: 100%;
+        height: 100%;
+    }
+    &__image-mobile{
+        display: none;
+    }
+    &__text{
+        position: absolute;
+        font-family: Josefin Sans;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $white;
+        top: 75%;
+        left: 10%;
+        z-index: 2;
+
+        padding-right: 5rem;
+    }
+
+    &:hover{
+        .creation__text{
+            color: $black;
+        }
+        &::after{
+            background-color: rgba(255, 255, 255, 0.651);
+        }
+    }
+}
+.creation::after{
+    content: "";
+    background: linear-gradient(to top, hsla(0, 0%, 0%, 0.493), hsla(0, 0%, 0%, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@include breakpoint(s){
+    .creations{
+        grid-template-areas: "title"
+                             "list"
+                             "button";
+
+        gap: 2rem;
+        &__title{
+            justify-self: center;
+        }
+        &__button{
+            justify-self: center;
+        }
+    }
+
+    .creations__list{
+        margin-top: 0;
+
+        grid-template-columns: 1fr;
+    }
+
+    .creation{
+        &__image{
+            display: none;
+        }
+        &__image-mobile{
+            display: block;
+            width: 100%;
+        }
+        &__text{
+            left: 5%;
+            top: 65%;
+            max-width: 40%;
+        }
+    }
+    .creation::after{
+        background: linear-gradient(to right, hsla(0, 0%, 0%, 0.493), hsla(0, 0%, 0%, 0));
+    }
+}
+@include breakpoint(xs){
+    .creation{
+        &__text{
+            top: 50%;
+            max-width: 50%;
+        }
+    }
+}
+@include breakpoint(xxxs){
+    .creation{
+        &__text{
+            top: 45%;
+            max-width: 60%;
+        }
+    }
+}

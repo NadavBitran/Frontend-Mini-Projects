@@ -1,0 +1,107 @@
+@use "../globals" as *;
+@use "../util" as *;
+
+
+.outer-hero{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url("../../../images/desktop/image-hero.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+
+    padding-bottom: 8rem;
+}
+
+.hero{
+    position: relative;
+    padding-top: 1rem;
+    height: 100%;
+    &__title{
+        position: relative;
+        padding: 3rem;
+
+        border: 1px solid $white;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        max-width: 45%;
+
+        margin-top: 8rem;
+
+        @include breakpoint(m){
+            padding: 2rem;
+        }
+    }
+}
+
+.header{
+    @include flexbox($flexDirection: row , $justifyContent: space-between , $alignItems: center);
+    width: 100%;
+    &__title{
+        position: relative;
+        margin: 0;
+        color: $white;
+        z-index: 5;
+    }
+}
+
+.navbar{
+    @include flexbox($flexDirection: row , $gap: 5rem);
+    list-style-type: none;
+    &__item a , &__item a:hover , &__item a:active &__item a:focus{
+        color: $white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    @include breakpoint(m){
+        gap: 4rem;
+    }
+    &__item{
+        position: relative;
+        padding-bottom: .5rem;
+
+        &::after{
+            content: "";
+            position: absolute;
+            transform: translateX(50%) scale(0,1);
+            transition: transform 0.15s ease-in-out;
+            left: 0;    
+            bottom: 0;
+            width: 50%;
+            height: 2px;
+            background-color: $white;
+        }
+        &:hover::after{
+            transform:  translateX(50%) scale(1,1);
+        }
+    }
+}
+
+
+@include breakpoint(s){
+    .outer-hero{
+        height: 70vh;
+        background-image: url("../../../images/mobile/image-hero.jpg");
+        background-position: center;
+        padding: 0;
+    }
+    .hero{
+        padding-top: 2rem;
+        &__title{
+            position: absolute;
+            margin: 0;
+            max-width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .navbar{
+        display: none;
+    }
+}
+

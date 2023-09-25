@@ -1,0 +1,144 @@
+@use "../globals" as *;
+@use "../util" as *;
+
+.outer-footer{
+    background-color: $black;
+    margin-top: 15rem;
+}
+.footer{
+    padding-block: 3rem;
+    color: $white;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    &__navbar{
+        @include flexboxVerticallyCenetered(row, 5rem);
+        list-style-type: none;
+        padding: 0;
+
+        &__item a , &__item a:hover , &__item a:active &__item a:focus{
+            color: $white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        &__item{
+            position: relative;
+            padding-bottom: 1rem;
+
+            &::after{
+                content: "";
+                position: absolute;
+                transform: translateX(50%) scale(0,1);
+                transition: transform 0.15s ease-in-out;
+                left: 0;    
+                bottom: 0;
+                width: 50%;
+                height: 2px;
+                background-color: $white;
+            }
+            &:hover::after{
+                transform:  translateX(50%) scale(1,1);
+            }
+        }
+    }
+    &__copyright{
+        text-align: end;
+        color: $darkGray;
+        font-weight: 400;
+    }
+    &__icons{
+        @include flexbox(row , 4rem , flex-end , center);
+        list-style-type: none;  
+        
+        &__item{
+            position: relative;
+            width: 5rem;
+        }
+        li{
+            position: relative;
+            padding-bottom: 1rem;
+            
+            &::after{
+                content: "";
+                position: absolute;
+                transform: scale(0,1);
+                transition: transform 0.15s ease-in-out;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $white;
+            }
+            &:hover::after{
+                transform:  scale(1,1);
+            }
+        }
+    }
+
+    @include breakpoint(xl){
+        margin-top: 10rem;
+
+        &__navbar{
+            gap: 3.5rem;
+        }
+
+        &__icons{
+            gap: 3.5rem;
+            img{
+                width: 4rem; 
+            }
+        }
+    }
+    @include breakpoint(l){
+        margin-top: 8rem;
+        
+        &__navbar{
+            gap: 3rem;
+        }
+
+        &__icons{
+            gap: 3rem;
+            img{
+                width: 3.5rem; 
+            }
+        }
+    }
+    @include breakpoint(m){
+        margin-top: 6rem;
+        
+        &__navbar{
+            gap: 2.5rem;
+        }
+
+        &__icons{
+            gap: 2.5rem;
+            img{
+                width: 3rem; 
+            }
+        }
+    }
+    @include breakpoint(s){
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+        
+        &__navbar , &__icons , &__copyright , &__title{
+            justify-self: center;
+        }
+        &__icons{
+            padding: 0;
+            grid-row: 3;
+            gap: 1.5rem;
+            img{
+                width: 2.25rem;
+            }
+        }
+        &__title{
+            margin: 0;
+        }
+        &__navbar{
+            grid-row: 2;
+            flex-direction: column;
+        }
+    }
+}

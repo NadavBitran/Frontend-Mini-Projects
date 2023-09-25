@@ -1,0 +1,32 @@
+@use "../util" as *;
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* , *::before , *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    min-height: 100vh;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+        &-thumb{
+            background-color: rgba(97, 12, 131, 0.829);
+        }
+    }
+
+    @include breakpoint(s){
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            -ms-overflow-style: none;
+            scrollbar-width: 0;
+    }
+}

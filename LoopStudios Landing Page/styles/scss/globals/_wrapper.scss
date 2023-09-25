@@ -1,0 +1,19 @@
+@use "../util" as *;
+
+.wrapper{
+    max-width: 1650px;
+    margin: 0 auto;
+
+    @include breakpoint(xl){
+        max-width: 1250px;
+    }
+    @include breakpoint(l){
+        max-width: 950px;
+    }
+    @include breakpoint(m){
+        max-width: 750px;
+    }
+    @include breakpoint(s){
+        max-width: 90%;
+    }
+}

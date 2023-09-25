@@ -1,0 +1,66 @@
+@use "../globals" as *;
+@use "../util" as *;
+
+.about{
+    position: relative;
+    margin-top: 15rem;
+
+    &__image{
+        width: 60%;
+    }
+
+    &__details{
+        position: absolute;
+        background-color: $white;
+
+        max-width: 45%;
+        top: 45%;
+        left: 48%;
+
+        padding-left: 8rem;
+        padding-top: 7rem;
+
+        @include breakpoint(xl){
+            padding-top: 5rem;
+        }
+        @include breakpoint(l){
+            padding-top: 4.75rem;
+        }
+        @include breakpoint(m){
+            padding-top: 3.75rem;
+        }
+    }
+    &__title{
+        font-family: Josefin Sans;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    @include breakpoint(xl){
+        margin-top: 10rem;
+    }
+    @include breakpoint(l){
+        margin-top: 8rem;
+    }
+    @include breakpoint(m){
+        margin-top: 6rem;
+    }
+}
+
+@include breakpoint(s){
+    .about{
+    &__image{
+        width: 100%;
+    }
+    &__details{
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-inline: 2.5rem;
+        padding-block: 1rem;
+
+        min-width: 100%;
+        text-align: center;
+    }
+}
+}

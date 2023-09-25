@@ -18,7 +18,7 @@ The News Homepage project is an example of a news website homepage. It features 
 
 ## 🌐 Live Site
 
-Explore the live version of the New Homepage [Here](https://your-live-site-url.com).
+Explore the live version of the New Homepage [Here](https://nadavbitran.github.io/Frontend-Mini-Projects/News%20Homepage).
 
 ## 📝 Author
 

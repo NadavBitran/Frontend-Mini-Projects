@@ -28,7 +28,7 @@
         },
         {
             "Title": "News Homepage",
-            "Description": "an example of a news website homepage with mobile support",
+            "Description": "an example of a news website homepage , including    mobile support",
             "Detailed_Description": "<h1>📰 News Homepage</h1><h2>🌟 Overview</h2><p>The News Homepage project is an example of a news website homepage. It features a navigation bar, main articles, sub articles, and a news section, complete with a responsive design that supports a hamburger menu for mobile devices. This project showcases front-end web development skills in creating an engaging and functional news website layout.</p><h2>🚀 Key Features</h2><ul><li><strong>Navigation Bar:</strong> The homepage includes a navigation bar for easy access to different sections of the website.</li><li><strong>Main Articles:</strong> Prominent main articles are featured at the top of the page, highlighting the latest news.</li><li><strong>Sub Articles:</strong> Additional sub-articles provide users with a variety of news topics.</li><li><strong>News Section:</strong> A dedicated news section displays a stream of the latest updates and stories.</li><li><strong>Responsive Design:</strong> The project is responsive, adapting to different screen sizes, and includes a hamburger menu for mobile devices.</li></ul><h2>🌐 Live Site</h2><p>Explore the live version of the New Homepage <a href=`https://nadavbitran.github.io/Frontend-Mini-Projects/News%20Homepage`>Here</a>.</p><h2>📝 Author</h2><p>Nadav Bitran</p><h2>📄 License</h2><p>This project is open-source and available under the MIT License.</p><h2>🌐 Project Inspiration</h2><p>The idea for this project was inspired by challenges provided by <a href='https://www.frontendmentor.io/'>Frontend Mentor</a>.</p>",
             "Technologies": ["HTML","SCSS","JS"],
             "Photo": "News Homepage/app-image/normal-screen.png",
@@ -36,6 +36,21 @@
             "Site": "https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl",
             "Live": "https://nadavbitran.github.io/Frontend-Mini-Projects/News%20Homepage",
             "Additional_Photos": ["News Homepage/app-image/normal-screen.png"]
+        },
+        {
+            "Title": "LoopStudios Landing Page",
+            "Description": "a landing page for a fake company , including mobile support",
+            "Detailed_Description": "<h1>🚀 LoopStudios Landing Page</h1><h2>🌟 Overview</h2><p>The LoopStudios Landing Page project is a landing page for a fake company called LoopStudios. It showcases details about the company, its creations over the years, features a hero section that grabs the user's attention, and includes a footer for additional information.</p><h2>🚀 Key Features</h2><ul><li><strong>Creations Gallery:</strong> A fake gallery of creations and projects the company has worked on over the years.</li><li><strong>Hero Section:</strong> The hero section provides a visually introduction to the company.</li><li><strong>Footer:</strong> Find additional contact information, social media links, and other important details in the footer.</li><li><strong>Mobile-Friendly:</strong> The landing page is designed to be responsive, including a hamburger menu on mobile devices.</li></ul><h2>🌐 Live Site</h2><p>Explore the live version of the LoopStudios Landing Page <a href=`https://nadavbitran.github.io/Frontend-Mini-Projects/LoopStudios%20Landing%20Page/`>Here</a>.</p><h2>📝 Author</h2><p>Nadav Bitran</p><h2>📄 License</h2><p>This project is open-source and available under the MIT License.</p><h2>🌐 Project Inspiration</h2><p>The idea for this project was inspired by challenges provided by <a href=`https://www.frontendmentor.io/`>Frontend Mentor</a>.</p>",
+            "Technologies": ["HTML","SCSS","JS"],
+            "Photo": "LoopStudios Landing Page/app-image/normal-screen.png",
+            "Repo": "https://github.com/NadavBitran/Frontend-Mini-Projects/tree/main/LoopStudios%20Landing%20Page",
+            "Site": "https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw",
+            "Live": "https://nadavbitran.github.io/Frontend-Mini-Projects/LoopStudios%20Landing%20Page/",
+            "Additional_Photos": ["LoopStudios Landing Page/app-image/landpage-1.png",
+                                  "LoopStudios Landing Page/app-image/landpage-2.png",
+                                  "LoopStudios Landing Page/app-image/landpage-3.png",
+                                  "LoopStudios Landing Page/app-image/landpage-4.png",
+                                  "LoopStudios Landing Page/app-image/landpage-5.png"]
         }
     ]
 }
