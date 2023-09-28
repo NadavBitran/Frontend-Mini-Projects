@@ -1,0 +1,104 @@
+@use "../util/" as *;
+
+$font-xxxxsmall: 1rem;
+$font-xxxsmall: 1.1rem;
+$font-xxsmall: 1.25rem;
+$font-xsmall: 1.5rem;
+$font-small: 1.7rem;
+$font-meduim: 2.5rem;
+$font-large: 3rem;
+$font-xlarge: 4rem;
+
+
+.title{
+    font-size: $font-xlarge;
+}
+.search-bar input{
+    font-size: $font-small;
+}
+.search-details__text{
+    font-size: $font-xsmall;
+}
+.search-details__result{
+    font-size: $font-small;
+}
+.popup-error__title{
+    font-size: $font-large;
+}
+.popup-error__error-message{
+    font-size: $font-meduim;
+}
+.popup-error__descrption , .popup-error ul{
+    font-size: $font-small;
+}
+
+@include breakpoint(l){
+    .title{
+        font-size: $font-large;
+    }
+    .search-bar input{
+        font-size: $font-xsmall;
+    }
+    .search-details__text{
+        font-size: $font-xxsmall;
+    }
+    .search-details__result{
+        font-size: $font-xsmall;
+    }
+
+}
+
+@include breakpoint(m){
+    .search-bar input{
+        font-size: $font-xxsmall;
+    }
+    .search-details__text{
+        font-size: $font-xxsmall;
+    }
+    .search-details__result{
+        font-size: $font-xxsmall;
+    }
+    .popup-error__title{
+        font-size: $font-meduim;
+    }
+    .popup-error__error-message{
+        font-size: $font-small;
+    }
+    .popup-error__descrption , .popup-error ul{
+        font-size: $font-xsmall;
+    }
+}
+
+@include breakpoint(s){
+    .search-details__text{
+        font-size: $font-xxxsmall;
+    }
+    .search-details__result{
+        font-size: $font-xxsmall;
+    }
+}
+
+@include breakpoint(xs){
+    .title{
+        font-size: $font-meduim;
+    }
+    .search-bar input{
+        font-size: $font-xxxsmall;
+    }
+    .search-details__text{
+        font-size: $font-xxxxsmall;
+    }
+    .search-details__result{
+        font-size: $font-xxxsmall;
+    }
+    .popup-error__title{
+        font-size: $font-small;
+    }
+    .popup-error__error-message{
+        font-size: $font-xsmall;
+    }
+    .popup-error__descrption , .popup-error ul{
+        font-size: $font-xxsmall;
+    }
+    
+}

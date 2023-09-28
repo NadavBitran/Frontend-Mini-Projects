@@ -1,0 +1,84 @@
+@use "../util" as *;
+
+.outer-wrapper{
+    background-image: url("../../images/pattern-bg-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+
+
+    @include breakpoint(s){
+        background-image: url("../../images/pattern-bg-mobile.png");
+    }
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    
+    padding-top: 4rem;
+}
+
+.title{
+    color: white;
+    font-weight: 600;
+}
+
+.search-bar{
+    position: relative;
+    width: 50%;
+
+    &__input{
+        width: 100%;
+
+        padding-block: 1.75rem;
+        padding-left: 2rem;
+        padding-right: 6rem;
+
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__button{
+
+        padding-block: 1.9rem;
+        padding-inline: 2rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        position: absolute;
+        transform: translateX(-100%);
+
+        border: none;
+        background-color: black;
+
+        
+
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.664);
+        }
+
+        @include breakpoint(l){
+            padding-block: 1.8rem;
+        }
+        @include breakpoint(m){
+            padding-block: 1.65rem;
+        }
+    }
+
+    @include breakpoint(s){
+        width: 100%;
+    }
+}

@@ -1,0 +1,97 @@
+@use "../util/" as *;
+
+.outer-popup-error{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    opacity: 1;
+
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s ease-in-out;
+}
+.popup-error{
+    background-image: url("../../../images/pattern-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% , -110%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    padding: 2.5rem;
+    
+
+    width: 60rem;
+
+    border-radius: 1rem;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.534);
+
+    transition: top 0.2s ease-in-out , transform 0.2s ease-in-out;
+
+    &__title{
+        color: white;
+        font-weight: 500;
+
+        text-align: center;
+    }
+    &__button{
+        padding-inline: 3rem;
+        padding-block: 1.5rem;
+        font-weight: 500;
+
+        background-color: rgb(59, 56, 231);
+        border: none;
+
+        margin-top: 8rem;
+
+        &:hover{
+            background-color: rgb(56, 111, 231);
+        }
+    }
+    &__descrption{
+        color: rgb(0, 0, 0);
+    }
+    ul{
+        color: black;
+
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    @include breakpoint(m){
+        width: 50rem;
+
+
+        &__button{
+            margin-top: 1rem;
+        }
+    }
+    @include breakpoint(s){
+        width: 45rem;
+        max-width: 90%;
+    }
+}
+
+.outer-popup-error.openVisually{
+    background-color: rgba(0, 0, 0, 0.644);
+
+    .popup-error{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+}
+
+.outer-popup-error.open{
+    display: block;
+}

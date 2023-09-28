@@ -1,0 +1,77 @@
+@use "../globals" as *;
+@use "../util" as *;
+
+.search-details{
+
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+
+    background-color: white;
+
+    border-radius: 1rem;
+    
+    z-index: 999;
+
+    &-entity{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        padding-block: 4rem;
+        padding-inline: 3rem;
+
+        &:nth-child(1)::after , &:nth-child(2)::after,
+        &:nth-child(3)::after{
+            content: "";
+            position: absolute;
+            transform: translateY(50%);
+            right: 0;    
+            top: 0;
+            width: 1px;
+            height: 50%;
+            background-color: $darkGray;
+        }
+
+        @include breakpoint(xl){
+            padding-block: 3rem;
+        }
+        @include breakpoint(l){
+            padding-block: 2.5rem;
+        }
+    }
+    
+
+    &__text{
+        text-transform: uppercase;
+        color: $darkGray;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    &__result{  
+        color: black;
+        font-weight: bold;
+        line-height: 2rem;
+    }
+
+
+    @include breakpoint(s){
+        grid-template-columns: 1fr;
+
+        gap: 1.5rem;
+        padding: 2rem;
+
+        &-entity{
+            text-align: center;
+            gap: .5rem;
+            padding-block: 0rem;
+
+            &:nth-child(1)::after , &:nth-child(2)::after,
+            &:nth-child(3)::after{
+                display: none;
+            }
+        }
+    }
+}
