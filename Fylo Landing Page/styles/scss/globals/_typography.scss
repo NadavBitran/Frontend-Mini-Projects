@@ -1,0 +1,109 @@
+@use "../util" as *;
+
+$font-xlarge: 5rem;
+$font-large: 4rem;
+$font-meduim: 3rem;
+$font-small: 2.5rem;
+$font-xsmall: 1.6rem;
+$font-2xsmall: 1.3rem;
+$font-3xsmall: 1.1rem;
+
+.navbar{
+    font-size: $font-small;
+}
+.introduction__title , .rec__title{
+    font-size: $font-xlarge;
+}
+.early-access-text__title{
+    font-size: $font-large;
+}
+.introduction__desc , .rec__desc{
+    font-size: $font-small;
+}
+.rec__link , .card__desc , .early-access-text__desc , .contact , footer .navbar{
+    font-size: $font-xsmall;
+}
+.introduction__input--error , .early-access-interaction__input--error{
+    font-size: $font-2xsmall;
+}
+.card-writer__details{
+    font-size: $font-3xsmall;
+}
+.introduction__input::placeholder , .introduction__button{
+    font-size: $font-2xsmall;
+}
+
+@include breakpoint(xl){
+    .navbar{
+        font-size: $font-small;
+    }
+    .introduction__title , .rec__title{
+        font-size: $font-large;
+    }
+    .early-access-text__title{
+        font-size: $font-meduim;
+    }
+    .introduction__desc , .rec__desc{
+        font-size: $font-xsmall;
+    }
+    .rec__link , .card__desc , .early-access-text__desc , .contact , footer .navbar{
+        font-size: $font-2xsmall;
+    }
+    .introduction__input--error , .early-access-interaction__input--error{
+        font-size: $font-2xsmall;
+    }
+    .card-writer__details{
+        font-size: $font-3xsmall;
+    }
+}
+
+@include breakpoint(l){
+    .navbar{
+        font-size: $font-xsmall;
+    }
+    .introduction__title , .rec__title , .early-access-text__title{
+        font-size: $font-meduim;
+    }
+    .introduction__desc , .rec__desc{
+        font-size: $font-xsmall;
+    }
+    .rec__link , .card__desc , .early-access-text__desc , .contact , footer .navbar{
+        font-size: $font-2xsmall;
+    }
+    .introduction__input--error , .early-access-interaction__input--error{
+        font-size: $font-2xsmall;
+    }
+    .card-writer__details{
+        font-size: $font-3xsmall;
+    }
+}
+
+@include breakpoint(m){
+    .navbar{
+        font-size: $font-xsmall;
+    }
+    .introduction__title , .rec__title , .early-access-text__title{
+        font-size: $font-small;
+    }
+    .introduction__desc , .rec__desc{
+        font-size: $font-2xsmall;
+    }
+    .rec__link , .card__desc , .early-access-text__desc , .contact , footer .navbar{
+        font-size: $font-2xsmall;
+    }
+    .introduction__input--error , .early-access-interaction__input--error{
+        font-size: $font-3xsmall;
+    }
+    .card-writer__details{
+        font-size: $font-3xsmall;
+    }
+    .introduction__input::placeholder , .introduction__button{
+        font-size: $font-3xsmall;
+    }
+}
+
+@include breakpoint(s){
+    .navbar{
+        font-size: $font-2xsmall;
+    }
+}

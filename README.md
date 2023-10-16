@@ -3,21 +3,39 @@
 Welcome to my personal repository where I showcase a collection of web development projects I've built to enhance my skills in JavaScript, CSS, and HTML. This space serves as my creative playground, allowing me to experiment with various concepts and technologies in web development.
 
 ## 🔧 Technologies Used
+
 - ![JavaScript](https://img.shields.io/badge/JavaScript-FFD700?style=for-the-badge&logo=javascript&logoColor=black)
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+- ![LeafletJS](https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=Leaflet&logoColor=white)
 
 ## 🌟 Key Features
+
 - A diverse range of projects, each focused on different aspects of web development.
 - Clean and well-documented code, tailored to my learning and experimentation needs.
 - Responsive design for practice in building mobile-friendly web applications.
 - A structured folder organization for easy access to each project.
 - Each project folder contains a README file with details and instructions, though these projects are primarily for personal use and experimentation.
 
+## 🌐 Live Site
+
+Navigate between the different mini-projects [Here](https://nadavbitran.github.io/Frontend-Mini-Projects/).
+
 ## 📂 Projects Included
+
 1. 💳 **Interactive Credit Card Form**: This project features an interactive credit card form that allows users to input their credit card details. It also includes a dynamic visual representation of the credit card that changes its values in real-time as the user types. Additionally, the project incorporates client-side validation to ensure that the entered inputs are valid and meet the necessary criteria.
-2. 🔍 **Github User Search App**: This project features a tool that allows users to search for and retrieve information about Github users with the help of Github's REST API. Additionaly, the project incoporates option to switch between 'dark' and 'light' modes.
-3. 📰 **News Homepage**: This project features an example of news homepage website that includes a navigation bar, main articles, sub articles, and a news section, complete with a responsive design that supports an hamburger menu for mobile devices.
+
+2. 🔍 **Github User Search App**: This project features a tool that allows users to search for and retrieve information about GitHub users with the help of GitHub's REST API. Additionally, the project incorporates an option to switch between 'dark' and 'light' modes.
+
+3. 📰 **News Homepage**: This project features an example of a news homepage website that includes a navigation bar, main articles, sub-articles, and a news section, complete with a responsive design that supports a hamburger menu for mobile devices.
+
+4. 🚀 **LoopStudios Landing Page**: This project features a landing page for a fictitious company that includes a hero section and a creation gallery, complete with a responsive design that supports a hamburger menu for mobile devices.
+
+5. 🌐 **IP Address Tracker**: This project features an IP tracker tool that includes IPV4, IPV6, and DOMAIN lookup with an interactive map, complete with a responsive design that supports a wide range of devices, including mobile.
+
+6. 💡 **Fylo Landing Page**: This project features a landing page for a fictitious company that includes a showcase of the company's services, complete with a responsive design that supports a wide range of devices, including mobile.
+
 
 ## 📚 Getting Started
 

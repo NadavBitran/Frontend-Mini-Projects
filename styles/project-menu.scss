@@ -86,31 +86,6 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(280px , 1fr));
 } 
-.navbar{ 
-    background-color: $bg-color;
-    margin: 10px; 
-    border-radius: 5px;
-
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
-
-    ul{
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
-        li{
-            display: inline;
-            margin-inline: 1em;
-            &:hover{
-                background-color: black;
-                color: $bg-color;
-            }
-            a{
-                text-decoration: none;
-                color: inherit;
-            }
-        }
-    }
-}
 .footer{
     background-color: $bg-color;
     margin: 10px;

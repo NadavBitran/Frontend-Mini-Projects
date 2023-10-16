@@ -1,0 +1,55 @@
+@use "../util/" as *;
+
+header{
+    padding-top: 5rem;
+
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    &__image{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    @include breakpoint(m){
+        width: 15rem;
+    }
+    @include breakpoint(s){
+        width: 8rem;
+    }
+    
+}
+
+header .navbar{
+    height: 100%;
+
+    ul{
+        height: 100%;
+        list-style-type: none;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6rem;
+    
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        @include breakpoint(s){
+            gap: 2.5rem;
+        }
+    }
+}

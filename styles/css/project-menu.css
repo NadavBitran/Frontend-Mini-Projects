@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Roboto:wght@400;500&display=swap");
+.project {
+  position: relative;
+  background-color: #F8F8FF;
+  margin: 10px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+}
+.project__image {
+  max-width: 100%;
+}
+.project__details {
+  padding-inline: 1.5em;
+  padding-block-end: 1.5em;
+  padding-block-start: 1em;
+  display: grid;
+  gap: 0.75em;
+}
+.project__title {
+  height: 40px;
+}
+.project__button-list {
+  display: flex;
+  gap: 0.75em;
+  flex-direction: row;
+  justify-content: center;
+  padding-inline: 1.5em;
+  margin-bottom: 0.75em;
+}
+.project__expand-icon {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 25px);
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+.project__expand-icon:hover {
+  opacity: 0.4;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.664);
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  gap: 0em;
+}
+
+.popup {
+  position: relative;
+  background-color: #F8F8FF;
+  max-width: 700px;
+  max-height: 90vh;
+  margin: 30px;
+  overflow: auto;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+}
+.popup::-webkit-scrollbar {
+  width: 0.75em;
+}
+.popup::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+.popup::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.747);
+}
+.popup__collapse-icon {
+  position: sticky;
+  top: 0;
+  left: calc(100% - 27px);
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+.popup__collapse-icon:hover {
+  opacity: 0.4;
+}
+.popup__details {
+  padding-inline: 1.5em;
+  padding-block: 0.75em;
+  display: grid;
+  gap: 1.5em;
+}
+.popup__image {
+  width: 100%;
+}
+.popup__image-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0em;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.popup__left-arrow, .popup__right-arrow {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+.popup__left-arrow:hover, .popup__right-arrow:hover {
+  opacity: 0.4;
+}
+.popup__button-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 1em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Georgia, serif;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-image: url("/images/bg-app.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+body::-webkit-scrollbar {
+  width: 0.75em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.747);
+}
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+
+.header {
+  background-color: #F8F8FF;
+  height: 90px;
+  margin: 10px;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+  text-align: center;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  border-radius: 5px;
+  font-size: 120%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.navbar {
+  background-color: #F8F8FF;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+}
+.navbar ul {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.navbar ul li {
+  display: inline;
+  margin-inline: 1em;
+}
+.navbar ul li:hover {
+  background-color: black;
+  color: #F8F8FF;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  background-color: #F8F8FF;
+  margin: 10px;
+  border-radius: 5px;
+  clear: both;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
+}
+.footer__items {
+  padding: 5px;
+  margin: 10px;
+}
+.footer__item {
+  margin-block: 1em;
+}
+.footer__item a {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h2, h3 {
+  font-size: 110%;
+}
+
+p, a, li {
+  font-size: 100%;
+}
+
+button {
+  padding: 0.5em;
+  padding-inline: 1.5em;
+  background-color: white;
+  color: black;
+  border: none;
+}
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.icon {
+  max-width: 25px;
+}
+
+.tech-item__html {
+  color: #E16428;
+}
+.tech-item__css {
+  color: #0070BB;
+}
+.tech-item__js {
+  color: #F0DB4F;
+}
+.tech-item__scss {
+  color: #CD6799;
+}
+.tech-item__react {
+  color: #61DAFB;
+}
+.tech-item__api {
+  color: #147714;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1536px) {
+  .wrapper {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 1280px) {
+  .wrapper {
+    max-width: 950px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    max-width: 680px;
+  }
+  .popup {
+    max-width: 630px;
+  }
+  h1 {
+    font-size: 125%;
+  }
+  strong, h2, h3 {
+    font-size: 100%;
+  }
+  a, p, li {
+    font-size: 90%;
+  }
+  button {
+    padding-inline: 1.25em;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 550px;
+  }
+  .popup {
+    max-width: 500px;
+  }
+  .navbar ul {
+    text-align: center;
+  }
+  .navbar ul li {
+    display: block;
+    margin-block: 0.5em;
+  }
+}
+@media (max-width: 640px) {
+  .wrapper {
+    max-width: 400px;
+  }
+  .popup {
+    max-width: 375px;
+  }
+  .popup__details {
+    padding-inline: 0.75em;
+    padding-block: 0.5em;
+  }
+  strong, h1 {
+    font-size: 105%;
+  }
+  h2, h3 {
+    font-size: 90%;
+  }
+  a, li {
+    font-size: 85%;
+  }
+  body, .popup {
+    -ms-overflow-style: none;
+    scrollbar-width: 0;
+  }
+  body::-webkit-scrollbar, .popup::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width: 475px) {
+  .wrapper {
+    max-width: 330px;
+  }
+  body {
+    overflow: auto !important;
+  }
+  .popup, .popup-overlay, .project__expand-icon {
+    display: none;
+  }
+  strong, h1 {
+    font-size: 100%;
+  }
+  h2, h3 {
+    font-size: 80%;
+  }
+}
+.hide-element {
+  display: none;
+}
+
+.hide-overflow {
+  overflow: hidden;
+}/*# sourceMappingURL=project-menu.css.map */

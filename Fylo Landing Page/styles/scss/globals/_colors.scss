@@ -1,0 +1,32 @@
+$veryDarkBlue: hsl(243, 87%, 12%);
+$desaturatedBlue: hsl(238, 22%, 44%);
+$brightBlue: hsl(224, 93%, 58%);
+$moderateCyan: hsl(170, 45%, 43%);
+$lightGrayishBlue: hsl(240, 75%, 98%);
+$lightGray: hsl(0, 0%, 75%);
+
+
+.introduction__title , .introduction__desc ,
+.rec__title , .rec__desc , .card__desc ,
+.card-writer__image , .card-writer__details{
+    color: $veryDarkBlue;
+}
+
+.outer-early-access{
+    background-color: $desaturatedBlue;
+}
+.early-access-text{
+    color: white;
+}
+.early-access-interaction__button{
+    color: white;
+    background-color: $brightBlue;
+}
+
+.outer-footer{
+    background-color: $veryDarkBlue;
+}
+
+.options{
+    color: white;
+}

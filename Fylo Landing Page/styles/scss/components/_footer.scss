@@ -1,0 +1,108 @@
+@use "../globals/" as *;
+@use "../util" as *;
+
+footer{
+    padding-block: 8rem;
+
+    img{
+        
+    }
+}
+.options{
+    display: grid;
+    grid-template-areas: "contact navbar navbar icons";
+
+    margin-top: 4rem;
+
+    *{
+        padding-left: 0;
+    }
+
+    @include breakpoint(s){
+        grid-template-areas: "contact"
+                              "navbar"
+                              "navbar"
+                              "icons";
+
+        gap: 4rem;
+    }
+}
+
+.contact{
+    grid-area: contact;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    li{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        img{
+            width: 18px;
+        }
+    }
+}
+footer .navbar{
+    grid-area: navbar;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4 , auto);
+    row-gap: 1rem;
+
+    list-style-type: none;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+
+        &:hover{
+            color: $brightBlue;
+        }
+    }
+
+    @include breakpoint(s){
+        
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2 , 1fr);
+        row-gap: 1rem;
+
+        li:nth-child(5){
+            margin-top: 2rem;
+        }
+    }
+}
+.icons{
+    grid-area: icons;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+    list-style-type: none;
+
+    li svg{
+        fill: white;
+
+        padding: .25rem;
+        border-radius: 50%;
+        border: 1px solid white;
+
+        transition: .25s ease-in-out;
+
+        &:hover{
+            fill: $brightBlue;
+            border-color: $brightBlue;
+        }
+    }
+
+    @include breakpoint(s){
+        justify-content: center;
+    }
+
+}

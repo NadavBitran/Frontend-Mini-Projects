@@ -63,6 +63,19 @@
             "Live": "https://65155cda34fa690a968bf354--lucky-unicorn-45dd92.netlify.app/",
             "Additional_Photos": ["IP Address Tracker/app-image/screen-1.png",
                                   "IP Address Tracker/app-image/screen-2.png"]
+        },
+        {
+            "Title": "Fylo Landing Page",
+            "Description": "a landing page for a fake company , including mobile support",
+            "Detailed_Description": "<h1>💡 Fylo Landing Page</h1><h2>🌟 Overview</h2><p>The Fylo Landing Page project is a landing page for a fictitious company named Fylo. This landing page is designed to provide essential information about the company, showcase its services, and engage users with a visually appealing and responsive design. With a special focus on mobile view support, this project ensures a seamless user experience on various devices.</p><h2>🚀 Key Features</h2><ul><li><strong>Services Showcase</strong>: Fylo Landing Page features a section highlighting the company's core services and offerings.</li><li><strong>Responsive Design</strong>: This landing page is meticulously designed to adapt to different screen sizes, ensuring optimal viewing on both desktop and mobile devices.</li><li><strong>Mobile View Support</strong>: Special attention has been given to mobile view, ensuring that users can easily navigate and explore the page on smartphones and tablets.</li></ul><h2>🌐 Live Site</h2><p>Experience the live version of the Fylo Landing Page <a href=`https://652d2cb8ac8af0009de1a916--astonishing-chaja-1051e1.netlify.app/`>Here</a>.</p><h2>📝 Author</h2><ul><li>Nadav Bitran</li></ul><h2>📄 License</h2><p>This project is open-source and available under the MIT License.</p><h2>🌐 Project Inspiration</h2><p>The idea for this project was inspired by challenges provided by <a href=`https://www.frontendmentor.io/`>Frontend Mentor</a>.</p>",
+            "Technologies": ["HTML","SCSS","JS"],
+            "Photo": "Fylo Landing Page/app-image/screen-1.png",
+            "Repo": "https://github.com/NadavBitran/Frontend-Mini-Projects/tree/main/Fylo%20Landing%20Page",
+            "Site": "https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5",
+            "Live": "https://652d2cb8ac8af0009de1a916--astonishing-chaja-1051e1.netlify.app/",
+            "Additional_Photos": ["Fylo Landing Page/app-image/screen-1.png",
+                                  "Fylo Landing Page/app-image/screen-2.png",
+                                  "Fylo Landing Page/app-image/screen-3.png"]
         }
     ]
 }
