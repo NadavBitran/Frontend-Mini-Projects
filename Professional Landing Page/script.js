@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded" , () => fetchFromJSON())
 form.addEventListener("submit"               , (e)=> validateForm(e))
 
 function fetchFromJSON(){
-    fetch("./projectList.JSON")
+    fetch("./projectList.json")
         .then(response => response.json())
         .then(rawProjectList => {
             moveJsonDataToVariables(rawProjectList)
