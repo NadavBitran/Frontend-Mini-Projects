@@ -1,0 +1,25 @@
+.btn-primary{
+    background-color: gray;
+    border: none;
+}
+.btn-primary:hover , .btn-primary:focus , .btn-primary:active{
+    background-color: rgba(128, 128, 128, 0.449) !important;
+}
+.btn-primary.disabled, .btn-primary[disabled]{
+    background-color: gray;
+}
+.btn-secondary {
+    color: green;
+}
+.btn-secondary:hover , .btn-secondary:focus{
+    background-color: green;
+    color: white;
+}
+
+.btn-secondary.active{
+    background-color: green !important;
+}
+
+.text-primary{
+    color: green !important;
+}

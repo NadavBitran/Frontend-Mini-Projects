@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to connect BootsTrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Professional Landing Page - Nadav</title>
+</head>
+<body class="bg-dark text-white">
+    <header class="position-sticky top-0 bg-black" style="z-index: 1">
+      <div class="container-md">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="navbar-brand">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+              <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+              <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
+            </svg>
+          </div>
+          <button class="navbar-toggler border-0" 
+                  type="buttons" 
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#navbarToggleOffcanvas"
+                  id="navbarSideCollapse" 
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav gap-4">
+              <li class="navbar-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="navbar-item"><a class="nav-link" href="#projectsListContainer">Projects</a></li>
+              <li class="navbar-item"><a class="nav-link" href="#contactContainer">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container mt-5">
+        <!-- Hero Container -->
+        <div class="container-fluid min-vh-100">
+          <div class="row h-100">
+            <div class="col-md-6 d-md-flex align-items-center">
+              <div>
+                <h1 class="display-4">Hello! I'm Nadav Bitran and I'm a <strong class="text-primary">Software Developer</strong></h1>
+                <p class="display-7 mt-4 text-center text-md-start">
+                  a Final year Computer Science Student<br>
+                  with passion for Software Development<br>
+                  loves Problem Solving and Challanges</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-md-flex align-items-center">
+              <img class="img-fluid" src="/images/heroSectionIcon.png"/>
+            </div>
+          </div>
+        </div>
+        <!-- Project List Container -->
+          <div class="container-fluid d-flex flex-column gap-4 mt-5" id="projectsListContainer">
+            <h3 class="text-center">My Projects</h3>
+            <p>The following is a list of projects I have worked on over the years, some of which I worked on in my spare time and some as part of my degree</p>
+            <div class="row flex-row-reverse justify-content-between gap-4 gap-lg-0">
+              <div class="nav nav-pills flex-lg-column col-lg-3 justify-content-center justify-content-lg-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active btn btn-secondary" id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button" role="tab" aria-controls="v-pills-all" aria-selected="true">All Projects</button>
+                <button class="nav-link btn btn-secondary" id="v-pills-frontend-tab" data-bs-toggle="pill" data-bs-target="#v-pills-frontend" type="button" role="tab" aria-controls="v-pills-frontend" aria-selected="true">Frontend Projects</button>
+                <button class="nav-link btn btn-secondary" id="v-pills-fullstack-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fullstack" type="button" role="tab" aria-controls="v-pills-fullstack" aria-selected="false">Fullstack Projects</button>
+                <button class="nav-link btn btn-secondary" id="v-pills-dotnet-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dotnet" type="button" role="tab" aria-controls="v-pills-dotnet" aria-selected="false">.NET Projects</button>
+                <button class="nav-link btn btn-secondary" id="v-pills-datascience-tab" data-bs-toggle="pill" data-bs-target="#v-pills-datascience" type="button" role="tab" aria-controls="v-pills-datascience" aria-selected="false">Data Science Projects</button>
+              </div>
+              <div class="tab-content col-lg-9" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab"></div>
+                <div class="tab-pane fade" id="v-pills-frontend" role="tabpanel" aria-labelledby="v-pills-frontend-tab"></div>
+                <div class="tab-pane fade" id="v-pills-fullstack" role="tabpanel" aria-labelledby="v-pills-fullstack-tab"></div>
+                <div class="tab-pane fade" id="v-pills-dotnet" role="tabpanel" aria-labelledby="v-pills-dotnet-tab"></div>
+                <div class="tab-pane fade" id="v-pills-datascience" role="tabpanel" aria-labelledby="v-pills-datascience-tab"></div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Skills Container -->
+          <div class="container-fluid mt-5 d-flex flex-column gap-5" id="skillsContainer">
+              <div class="d-flex flex-wrap gap-4 justify-content-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="74" height="74"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="74" height="74"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="74" height="74"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="74" height="74"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="74" height="74"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="74" height="74"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="74" height="74"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="74" height="74"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="74" height="74"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="74" height="74"/>
+              </div>
+          </div>
+        <!--Contact Container -->
+        <div class="container-fluid text-center mt-5 d-flex flex-column gap-3" id="contactContainer">
+          <h3>Feel free to contact me for anything!</h3>
+          <form class="d-flex flex-column gap-3 mx-auto needs-validation col-lg-9 col-12" novalidate>
+            <div>
+              <label for="emailFormControl" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailFormControl" placeholder="example@gmail.com"/>
+              <div class="invalid-feedback text-start">Please enter a valid Email Address</div>
+            </div>
+            <div>
+              <label for="nameformControl" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="nameFormControl" placeholder="Jon Jonson"/>
+              <div class="invalid-feedback text-start">Please enter Full Name</div>
+            </div>
+            <div>
+              <label for="descFormControl" class="form-label">Description</label>
+              <textarea type="text" class="form-control" id="descFormControl" rows="6" placeholder="Just wanted to let you know..."></textarea>
+              <div class="invalid-feedback text-start">Please enter Description</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary align-self-start px-5 py-2">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div class="offcanvas offcanvas-end d-lg-none bg-dark" id="navbarToggleOffcanvas">
+      <div class="offcanvas-header">
+        <h3>Menu</h3>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav gap-4 navbar-dark">
+          <li class="navbar-item align-self-start" data-bs-dismiss="offcanvas"><a class="nav-link" href="#">Home</a></li>
+          <li class="navbar-item align-self-start" data-bs-dismiss="offcanvas"><a class="nav-link" href="#projectsListContainer">Projects</a></li>
+          <li class="navbar-item align-self-start" data-bs-dismiss="offcanvas"><a class="nav-link" href="#contactContainer">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="bg-black mt-5">
+      <div class="container-md">
+        <div class="row py-2">
+          <div class="col-6 d-flex justify-content-center">
+            <ul class="row navbar-nav gap-2">
+              <li class="navbar-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="navbar-item"><a class="nav-link" href="#projectsListContainer">Projects</a></li>
+              <li class="navbar-item"><a class="nav-link" href="#contactContainer">Contact</a></li>
+            </ul> 
+          </div>
+
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <ul class="icons list-unstyled d-flex flex-row gap-3">
+              <li><a href="https://github.com/nadavbitran" target="_blank"><img src="/images/githubIcon.png" width="55" height="55"/></a></li>
+              <li><a href="https://il.linkedin.com/in/nadavbitran" target="_blank"><img src="/images/linkedinIcon.png" width="55" height="55"/></a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    
+
+    <!-- Link to connect BootsTrap's bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <!-- Link to my script that embeds the cards -->
+    <script src="/script.js"></script>
+</body>
+</html>
