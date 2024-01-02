@@ -10,49 +10,49 @@
         "projectName" : "Github API Search",
         "projectDesc" : "a Frontend site used to find github's accounts information",
         "projectRepo" : "https://nadavbitran.github.io/Frontend-Mini-Projects/",
-        "projectImage" : "/images/projectImages/githubAccSearcher.png",
+        "projectImage" : "./images/projectImages/githubAccSearcher.png",
         "projectLabel": "Frontend"
     },
     {
         "projectName" : "IP Address Tracker",
         "projectDesc" : "a Frontend tool used to find information about IP and DOMAIN addresses",
         "projectRepo" : "https://nadavbitran.github.io/Frontend-Mini-Projects/",
-        "projectImage": "/images/projectImages/ipAddressTracker.png",
+        "projectImage": "./images/projectImages/ipAddressTracker.png",
         "projectLabel": "Frontend"
     },
     {
         "projectName" : "Loopstudios Landing Page",
         "projectDesc" : "a morden and fluid landing page with responsive design",
         "projectRepo" : "https://nadavbitran.github.io/Frontend-Mini-Projects/",
-        "projectImage": "/images/projectImages/loopstudiosLandingPage.png",
+        "projectImage": "./images/projectImages/loopstudiosLandingPage.png",
         "projectLabel": "Frontend"
     },
     {
         "projectName" : "News Homepaper Landing Page",
         "projectDesc" : "a morden and fluid landing page with responsive design",
         "projectRepo" : "https://nadavbitran.github.io/Frontend-Mini-Projects/",
-        "projectImage": "/images/projectImages/newsHomePaperPage.png",
+        "projectImage": "./images/projectImages/newsHomePaperPage.png",
         "projectLabel": "Frontend"
     },
     {
         "projectName" : "Interactive Comment Section App",
         "projectDesc" : "(IN PROGRESS) a fullstack web aplication featuring live chatting",
         "projectRepo" : null,
-        "projectImage": "/images/projectImages/commentSection.png",
+        "projectImage": "./images/projectImages/commentSection.png",
         "projectLabel": "Fullstack"
     },
     {
         "projectName" : "Fylo Landing Page",
         "projectDesc" : "a morden and fluid landing page with responsive design",
         "projectRepo" : "https://nadavbitran.github.io/Frontend-Mini-Projects/",
-        "projectImage": "/images/projectImages/fyloLandingPage.png",
+        "projectImage": "./images/projectImages/fyloLandingPage.png",
         "projectLabel": "Frontend"
     },
     {
         "projectName" : "Housing Price Prediction",
         "projectDesc" : "a Project which we try to predict apartment prices from different areas in the country",
         "projectRepo" : "https://github.com/NadavBitran/IntroDataScience",
-        "projectImage": "/images/projectImages/cityDS.png",
+        "projectImage": "./images/projectImages/cityDS.png",
         "projectLabel": "Data Science"
     }
 ]
