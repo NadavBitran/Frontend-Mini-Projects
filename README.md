@@ -36,6 +36,8 @@ Navigate between the different mini-projects [Here](https://nadavbitran.github.i
 
 6. 💡 **Fylo Landing Page**: This project features a landing page for a fictitious company that includes a showcase of the company's services, complete with a responsive design that supports a wide range of devices, including mobile.
 
+7. 📚 **Portfolio Page**: This project features a portfolio page showcasing some of my projects, written in bootstrap5
+
 
 ## 📚 Getting Started
 
