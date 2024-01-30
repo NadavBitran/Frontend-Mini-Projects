@@ -123,8 +123,8 @@
   font-family: Verdana, Georgia, serif;
   font-size: 1rem;
   -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -169,30 +169,6 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 120%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.navbar {
-  background-color: #F8F8FF;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.308);
-}
-.navbar ul {
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-}
-.navbar ul li {
-  display: inline;
-  margin-inline: 1em;
-}
-.navbar ul li:hover {
-  background-color: black;
-  color: #F8F8FF;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .footer {
@@ -267,6 +243,9 @@ ul {
 }
 .tech-item__api {
   color: #147714;
+}
+.tech-item__bootstrap {
+  color: #8957cf;
 }
 
 .tech-list {

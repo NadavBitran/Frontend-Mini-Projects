@@ -5,7 +5,7 @@ $js-color: #F0DB4F;
 $react-color: #61DAFB;
 $scss-color: #CD6799;
 $api-color: #147714;
-$bootsrap-color: #8957cf;
+$bootstrap-color: #8957cf;
 $bg-color: #F8F8FF;
 
 // ============= CUSTOM MIXIN =============
@@ -165,8 +165,8 @@ ul{
     &__api{
         color: $api-color;
     }
-    &__bootsrap{
-        color: $bootsrap-color;
+    &__bootstrap{
+        color: $bootstrap-color;
     }
 }
 .tech-list{
