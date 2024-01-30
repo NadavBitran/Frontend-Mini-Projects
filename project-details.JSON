@@ -77,7 +77,7 @@
                                   "Fylo Landing Page/app-image/screen-2.png",
                                   "Fylo Landing Page/app-image/screen-3.png"]
         },
-      {
+        {
             "Title": "Portfolio Page",
             "Description": "a portfolio page showcasing some of my projects, including mobile support",
             "Detailed_Description": "<h1>💡Portfolio Page</h1><h2>🌟 Overview</h2><p>The Portfolio Page project is a project built with bootsrap5 in a Frontend Development course</p><h2>🚀 Key Features</h2><ul><li><strong>Projects Showcase</strong>: a interactive component to search and click to view my different projects</li><li><strong>Contact Form</strong>: a fake contact form with input validation</li></ul><h2>🌐 Live Site</h2><p>Explore the live version of the Portflio Page <a href=`https://nadavbitran.github.io/Frontend-Mini-Projects/Professional%20Landing%20Page/`>Here</a>.</p><h2>📝 Author</h2><p>Nadav Bitran</p><h2>📄 License</h2><p>This project is open-source and available under the MIT License.</p>",
@@ -89,8 +89,7 @@
             "Additional_Photos": [
               "Professional Landing Page/app-image/screen-1.png",
               "Professional Landing Page/app-image/screen-2.png",
-              "Professional Landing Page/app-image/screen-3.png"
-         ]
+              "Professional Landing Page/app-image/screen-3.png"]
         }
     ]
 }
